@@ -6,7 +6,7 @@ import AnimationProjectPage from './pages/AnimationProjectPage.jsx'
 import VrLandingPage from './pages/VrLandingPage.jsx'
 import SenseOfNowherePage from './pages/SenseOfNowherePage.jsx'
 import IllustrationListPage from './pages/IllustrationListPage.jsx'
-import SummerSecretsPage from './pages/SummerSecretsPage.jsx'
+import IllustrationProjectPage from './pages/IllustrationProjectPage.jsx'
 import ComicsListPage from './pages/ComicsListPage.jsx'
 import ComeoutPage from './pages/ComeoutPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
@@ -39,8 +39,8 @@ function AppRoutes() {
 
         <Route path="/illustration/" element={<IllustrationListPage />} />
         <Route path="/zh/illustration/" element={<IllustrationListPage />} />
-        <Route path="/illustration/summer-secrets/" element={<SummerSecretsPage />} />
-        <Route path="/zh/illustration/summer-secrets/" element={<SummerSecretsPage />} />
+        <Route path="/illustration/:slug/" element={<IllustrationProjectPage />} />
+        <Route path="/zh/illustration/:slug/" element={<IllustrationProjectPage />} />
 
         <Route path="/comics/" element={<ComicsListPage />} />
         <Route path="/zh/comics/" element={<ComicsListPage />} />

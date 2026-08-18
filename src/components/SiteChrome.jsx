@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from './Link.jsx'
 import { AVATAR_FRAMES, NAV, SOCIALS, img } from '../data/site.js'
 import { useLang } from '../i18n/LangProvider.jsx'
 import { useAvatarFlip } from '../hooks/useAvatarFlip.js'
@@ -16,14 +16,13 @@ export function Sidebar({ activeKey }) {
         <br />
         Yeh
       </Link>
-      <div className="avatar-wrap">
-        <span className="avatar-label">animation Director</span>
+      <Link className="avatar-wrap" to={homePath} aria-label="Home">
         <div className="frames">
           {AVATAR_FRAMES.map((frame, index) => (
             <img key={frame} src={img(frame)} alt="" className={index === 0 ? 'on' : ''} />
           ))}
         </div>
-      </div>
+      </Link>
       <nav className="nav" aria-label="Main">
         <span className="dot">◔</span>
         {NAV[lang].map((item) => (

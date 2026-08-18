@@ -33,16 +33,27 @@ export default function AboutPage() {
     <PageLayout activeKey="about">
       <div className="about">
         <img className="onion" src={projectImage('d18541_9dfa5ad846f44ab9af3d2bc99998bae8~mv2.png')} alt="" />
-        <img
-          className="photo-purple"
-          src={projectImage('d18541_fffbaf53c65344d087a1af48b3abe42c~mv2.jpg')}
-          alt=""
-        />
-        <img
-          className="photo-main"
-          src={projectImage('d18541_fffbaf53c65344d087a1af48b3abe42c~mv2.jpg')}
-          alt={lang === 'zh' ? '葉信萱' : 'Hsin-Hsuan Yeh'}
-        />
+        <svg width="0" height="0" aria-hidden="true" className="about-filters">
+          <filter id="about-purple" colorInterpolationFilters="sRGB">
+            <feColorMatrix type="saturate" values="0" />
+            <feColorMatrix
+              type="matrix"
+              values="0.6196078431372549 0 0 0 0.37254901960784315 0.807843137254902 0 0 0 0 0.07843137254901955 0 0 0 0.6784313725490196 0 0 0 1 0"
+            />
+          </filter>
+        </svg>
+        <div className="photo-purple">
+          <img src={projectImage('about-photo-purple.jpg')} alt="" />
+        </div>
+        <div className="photo-main">
+          <img
+            src={projectImage('about-photo-main.jpg')}
+            alt={lang === 'zh' ? '葉信萱' : 'Hsin-Hsuan Yeh'}
+          />
+          <div className="photo-accent">
+            <img src={projectImage('about-photo-accent.jpg')} alt="" />
+          </div>
+        </div>
         <div className="bio">
           <h1>
             {copy.nameLines.map((line, index) => (

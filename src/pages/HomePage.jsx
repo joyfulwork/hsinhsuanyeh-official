@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from '../components/Link.jsx'
 import { PageLayout } from '../components/PageLayout.jsx'
 import { MarqueeStrip } from '../components/Marquee.jsx'
 import { usePageMeta } from '../hooks/usePageMeta.js'
@@ -10,7 +10,6 @@ import { useLang } from '../i18n/LangProvider.jsx'
 import { localizedPath } from '../data/site.js'
 import { maskUrl } from '../utils/maskUrl.js'
 
-const MARQUEE_DURATION = WIX_HOME.marquees.top.duration
 const LEMON = WIX_HOME.bubbles.find((b) => b.alt === 'Lemon')
 
 const MASK_BY_IMAGE = Object.fromEntries(
@@ -97,13 +96,13 @@ export default function HomePage() {
         <img className="goose" src={projectImage(WIX_HOME.goose)} alt="" />
 
         <div className="strip s1">
-          <MarqueeStrip duration={MARQUEE_DURATION} />
+          <MarqueeStrip />
         </div>
         <div className="strip s2">
-          <MarqueeStrip variant="green" dark duration={MARQUEE_DURATION} />
+          <MarqueeStrip variant="green" dark />
         </div>
         <div className="strip s3">
-          <MarqueeStrip duration={MARQUEE_DURATION} />
+          <MarqueeStrip />
         </div>
 
         {HOME_BUBBLES.map((bubble) => (
@@ -120,12 +119,11 @@ export default function HomePage() {
               '--bubble-mask': maskUrl(LEMON.maskImage),
               left: '71.4%',
               top: '70.3%',
-              width: '15.2%',
-              aspectRatio: '1',
-              transform: 'scale(-1, -1)',
+              width: 195,
+              height: 195,
             }}
           >
-            <img src={projectImage(LEMON.image)} alt="Hsin-Hsuan Yeh" loading="lazy" />
+            <img src={projectImage('lemon-home.jpg')} alt="Hsin-Hsuan Yeh" loading="lazy" />
           </Link>
         ) : null}
       </div>

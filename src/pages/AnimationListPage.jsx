@@ -1,5 +1,5 @@
 import { PageLayout } from '../components/PageLayout.jsx'
-import { Marquee } from '../components/Marquee.jsx'
+import { Marquee, AnimationBlobIcon } from '../components/Marquee.jsx'
 import { AnimationGridItem } from '../components/AnimationGridItem.jsx'
 import { usePageMeta } from '../hooks/usePageMeta.js'
 import { PAGE_META } from '../data/meta.js'
@@ -20,11 +20,9 @@ export default function AnimationListPage() {
   return (
     <PageLayout activeKey="animation">
       <div style={{ marginTop: '110px' }}>
-        <Marquee className="big m-grey">
+        <Marquee className="big m-grey anim-marquee" pxPerSec={96}>
           <span className="word">Animation</span>
-          <span className="blob-orange" />
-          <span className="word">Animation</span>
-          <span className="blob-orange" />
+          <AnimationBlobIcon />
         </Marquee>
       </div>
 
@@ -35,11 +33,9 @@ export default function AnimationListPage() {
       </div>
 
       <div style={{ marginTop: '60px' }}>
-        <Marquee className="big m-cream">
+        <Marquee className="big m-cream anim-marquee" pxPerSec={96}>
           <span className="word">Animation</span>
-          <span className="blob-orange" />
-          <span className="word">Animation</span>
-          <span className="blob-orange" />
+          <AnimationBlobIcon />
         </Marquee>
       </div>
     </PageLayout>

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from '../components/Link.jsx'
 import { PageLayout } from '../components/PageLayout.jsx'
 import { usePageMeta } from '../hooks/usePageMeta.js'
 import { PAGE_META } from '../data/meta.js'

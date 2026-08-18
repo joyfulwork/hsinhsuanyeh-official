@@ -1,4 +1,5 @@
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
+import { Link } from '../components/Link.jsx'
 import { PageLayout } from '../components/PageLayout.jsx'
 import { usePageMeta } from '../hooks/usePageMeta.js'
 import { ANIMATION_STUBS, projectImage } from '../data/projects.js'

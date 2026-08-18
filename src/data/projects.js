@@ -438,18 +438,150 @@ TNUA Sophomore year I Production`,
 
 export const COMICS_GRID = [
   { href: '/comics/comeout/', image: 'd18541_bd0c131480224675a0b6cdcc96d6db4f~mv2.gif', alt: "Why don't you come out" },
-  { image: 'd18541_75835dbfbbed43bdbbab1bfaaf55714d~mv2.jpg', alt: '' },
-  { image: 'd18541_83384bd4b33b4c21ac4a3368124a9823~mv2.jpg', alt: '' },
+  { image: 'd18541_75835dbfbbed43bdbbab1bfaaf55714d~mv2.jpg', alt: 'mole' },
+  { image: 'd18541_83384bd4b33b4c21ac4a3368124a9823~mv2.jpg', alt: 'eu1' },
 ]
 
-export const ILLUSTRATION_ITEMS = [
-  'd18541_3f05f9e3b599498b934176ced5ce20e2~mv2.jpg',
-  'd18541_1dc4c053cdf242bf98dab3cac4b4e740~mv2.jpg',
-  'd18541_06086172ff43446e91fb03981f084855~mv2.jpg',
-  'd18541_020829819ae74536b1dfe818afcec74b~mv2.jpg',
-  'd18541_df91202a2a1b4d699d63ea8970ed1cd8~mv2.jpg',
-  'd18541_f756b8b9380d49829e4fc529ce7cfede~mv2.jpg',
+export const ILLUSTRATION_GRID = [
+  {
+    slug: 'crystal',
+    href: '/illustration/crystal/',
+    image: 'd18541_3f05f9e3b599498b934176ced5ce20e2~mv2.jpg',
+    alt: 'Crystal',
+  },
+  {
+    slug: 'spirit',
+    href: '/illustration/spirit/',
+    image: 'd18541_06086172ff43446e91fb03981f084855~mv2.jpg',
+    alt: 'Spirit',
+  },
+  {
+    slug: 'watermelon',
+    href: '/illustration/watermelon/',
+    image: 'd18541_df91202a2a1b4d699d63ea8970ed1cd8~mv2.jpg',
+    alt: 'watermelon',
+  },
+  {
+    slug: 'landscape-magazine-photoshoot',
+    href: '/illustration/landscape-magazine-photoshoot/',
+    image: 'd18541_020829819ae74536b1dfe818afcec74b~mv2.jpg',
+    alt: 'Castle',
+  },
+  {
+    slug: 'wild-spirit',
+    href: '/illustration/wild-spirit/',
+    image: 'd18541_1dc4c053cdf242bf98dab3cac4b4e740~mv2.jpg',
+    alt: 'ritual',
+  },
+  {
+    slug: 'espinas-mezcal-ad',
+    href: '/illustration/espinas-mezcal-ad/',
+    image: 'd18541_f756b8b9380d49829e4fc529ce7cfede~mv2.jpg',
+    alt: 'Self-Portrait',
+  },
+  {
+    slug: 'summer-secrets',
+    href: '/illustration/summer-secrets/',
+    image: 'd18541_17c114c2f1804bb6bc6ec18f0749e816~mv2.jpg',
+    alt: 'Summer Secrets',
+  },
+  {
+    slug: 'under-the-sun',
+    href: '/illustration/under-the-sun/',
+    image: 'd18541_259b3b25a68a4bfd94a750c849abb33d~mv2.jpg',
+    alt: 'Morning in Lisbon',
+  },
+  {
+    slug: 'policeseries',
+    href: '/illustration/policeseries/',
+    image: 'd18541_8f353d3996f44d568a1706f89d0e5003~mv2.jpg',
+    alt: 'NPA Commissioned Series',
+  },
 ]
+
+export const ILLUSTRATION_ORDER = ILLUSTRATION_GRID.map((item) => item.slug)
+
+function illustrationProject(title, hero, gallery = []) {
+  return {
+    title,
+    hero,
+    gallery,
+    meta: {
+      en: {
+        title: `${title} | Hsin Hsuan Yeh`,
+        description: `${title} — illustration by Hsin-Hsuan Yeh.`,
+      },
+      zh: {
+        title: `${title} | Hsin Hsuan Yeh`,
+        description: `${title} — 葉信萱插畫作品。`,
+      },
+    },
+  }
+}
+
+export const ILLUSTRATION_DETAILS = {
+  crystal: illustrationProject('Crystal', 'd18541_3f05f9e3b599498b934176ced5ce20e2~mv2.jpg', [
+    'd18541_72a95883dc614d429226cb3a0adb8656~mv2.jpg',
+  ]),
+  spirit: illustrationProject('Spirit', 'd18541_06086172ff43446e91fb03981f084855~mv2.jpg', [
+    'd18541_cb7e288f728844f9b43f912f4eedcd33~mv2.jpg',
+    'd18541_efe386b742c94b4cb1b8394eecdac0f6~mv2.jpg',
+  ]),
+  watermelon: illustrationProject('watermelon', 'd18541_df91202a2a1b4d699d63ea8970ed1cd8~mv2.jpg', [
+    'd18541_ebec53fe269442eb984fb2cbe0c7fa52~mv2.jpg',
+    'd18541_9107a56121a645cd8facffafd5f54af6~mv2.jpg',
+  ]),
+  'landscape-magazine-photoshoot': illustrationProject(
+    'Castle',
+    'd18541_020829819ae74536b1dfe818afcec74b~mv2.jpg',
+    [
+      'd18541_05f95e31a30b4535923fe36b5ffa291a~mv2.jpg',
+      'd18541_4d105c789e694a34a36cdb23bf1e0d9f~mv2.jpg',
+      'd18541_cbf75a504f154300bc72d122a65f9fef~mv2.jpg',
+    ],
+  ),
+  'wild-spirit': illustrationProject('ritual', 'd18541_1dc4c053cdf242bf98dab3cac4b4e740~mv2.jpg', [
+    'd18541_4e6418cad20f477fba70ff1b81055670~mv2.jpg',
+    'd18541_46c21d913cfb4c039ef09e7f27bc6c02~mv2.jpg',
+    'd18541_9a4f50638e9a491b8efc5bae9adec98b~mv2.jpg',
+    'd18541_b1a8a7c3311b4766b172ac1a83e9dc1a~mv2.jpg',
+  ]),
+  'espinas-mezcal-ad': illustrationProject('Self-Portrait', 'd18541_f756b8b9380d49829e4fc529ce7cfede~mv2.jpg', [
+    'd18541_71a974eb2dbd41dcae732f6274e27596~mv2.jpg',
+    'd18541_62e827a5336a4b6eb5a6b0d41786d12b~mv2.jpeg',
+    'd18541_fa893e871b2546dd867aecc755281542~mv2.jpg',
+    'd18541_aebcc40a612c4d1cb669f9122146d3f2~mv2.jpg',
+    'd18541_61cc284c99d9487e91a06af09ed2100e~mv2.jpg',
+    'd18541_14919acda36a424cb1fdb5b85fdf1c09~mv2.jpg',
+    'd18541_0ba26233c6384653835834d61ba916c5~mv2.jpg',
+    'd18541_ad18da9e50b54742a8aa5ffcdcc10179~mv2.jpg',
+    'd18541_327c53a82aaa4238867e2d19a2166473~mv2.jpg',
+  ]),
+  'summer-secrets': illustrationProject('Summer Secrets', 'd18541_17c114c2f1804bb6bc6ec18f0749e816~mv2.jpg', [
+    'd18541_910e6176af494718b55e4301ee947ad2~mv2.jpg',
+    'd18541_5b40813877f44ab8a1d318edd3466466~mv2.jpg',
+    'd18541_b9a05047f7fa41f985b933c89545a16a~mv2.jpg',
+  ]),
+  'under-the-sun': illustrationProject('Morning in Lisbon', 'd18541_259b3b25a68a4bfd94a750c849abb33d~mv2.jpg', [
+    'd18541_4aa2ff2744364bac932978ed4e77664b~mv2.jpg',
+    'd18541_beb173c47fc94c4195c363269ab1bd62~mv2.jpg',
+    'd18541_ee060432111d472dbe81e380ba2506f6~mv2.jpg',
+    'd18541_354ff9de62e046f9addbabe9c3ff7f88~mv2.jpg',
+  ]),
+  policeseries: illustrationProject('NPA Commissioned Series', 'd18541_8f353d3996f44d568a1706f89d0e5003~mv2.jpg', [
+    'd18541_c6bb4d0da3e843e4ab820851f419aa2d~mv2.jpg',
+    'd18541_cc8833eecff84d0e8f3b7a7addbdcdcf~mv2.jpg',
+    'd18541_8a39dee0bae44d9291e5912f285c0841~mv2.jpg',
+    'd18541_1051cb5a104c4685a03b6be6ce4efef1~mv2.jpg',
+    'd18541_2cc31c39767e45f083226693de249db3~mv2.jpg',
+    'd18541_59713f7a28144d42b7a0a02ee9c40297~mv2.jpg',
+    'd18541_be7c93c61bf1468eb43336bff58b2c33~mv2.jpg',
+    'd18541_bb893d0e02d642e8b98e3024c2068307~mv2.jpg',
+    'd18541_082bbe72fdbb453d806758328e951f87~mv2.jpg',
+    'd18541_a33c98e1999a400ca47e10216d9da3a2~mv2.jpg',
+    'd18541_2f62f37bfbf64bb7b3083e38767b0d73~mv2.jpg',
+  ]),
+}
 
 export const ABOUT = {
   en: {
@@ -541,14 +673,7 @@ export const COMEOUT = {
   ],
 }
 
-export const SUMMER_SECRETS = {
-  title: 'Summer Secrets',
-  images: [
-    'd18541_17c114c2f1804bb6bc6ec18f0749e816~mv2.jpg',
-    'd18541_910e6176af494718b55e4301ee947ad2~mv2.jpg',
-    'd18541_5b40813877f44ab8a1d318edd3466466~mv2.jpg',
-  ],
-}
+export const SUMMER_SECRETS = ILLUSTRATION_DETAILS['summer-secrets']
 
 export const VR_SON = {
   en: {

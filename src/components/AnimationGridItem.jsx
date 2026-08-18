@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from './Link.jsx'
 import { projectImage } from '../data/projects.js'
 import { localizedPath } from '../data/site.js'
 import { useLang } from '../i18n/LangProvider.jsx'

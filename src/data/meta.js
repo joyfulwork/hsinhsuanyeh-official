@@ -1,7 +1,7 @@
 export const PAGE_META = {
   home: {
     en: {
-      title: 'HOME | Hsin Hsuan Yeh',
+      title: 'Hsin Hsuan Yeh | Animation Director',
       description:
         'Portfolio of Hsin-Hsuan Yeh — animation director working in 2D animation, stop-motion, VR, illustration, and comics.',
       ogTitle: 'Hsin Hsuan Yeh | Animation Director',

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from '../components/Link.jsx'
 import { PageLayout } from '../components/PageLayout.jsx'
 import { usePageMeta } from '../hooks/usePageMeta.js'
 import { PAGE_META } from '../data/meta.js'
@@ -24,15 +24,15 @@ export default function VrLandingPage() {
     <PageLayout activeKey="vr">
       <div className="vr-stage">
         <img className="broccoli" src={projectImage('d18541_bdbf8a992eb4480d8d81cdd88040cfa8~mv2.png')} alt="" />
-        <Link to={vrSonPath}>
-          <img
-            className="son-badge"
-            src={projectImage('d18541_611580096f15491894d65dd42c30de65~mv2.png')}
-            alt="Sense Of Nowhere"
-          />
+        <Link to={vrSonPath} className="badge son-badge">
+          <img className="badge-default" src={projectImage('vr-badge-default.png')} alt="Sense Of Nowhere" />
+          <img className="badge-press" src={projectImage('vr-pig-press.png')} alt="" />
         </Link>
-        <img className="flower" src={projectImage('d18541_6fc5e4e0023a4dfe868a8566b97d2c5d~mv2.png')} alt="" />
-        <span className="tbc">{tbc}</span>
+        <div className="badge flower">
+          <img className="badge-default" src={projectImage('d18541_6fc5e4e0023a4dfe868a8566b97d2c5d~mv2.png')} alt="" />
+          <img className="badge-press" src={projectImage('d18541_a602fb01e106493ca8a36240bca80987~mv2.png')} alt="" />
+          <span className="tbc">{tbc}</span>
+        </div>
       </div>
     </PageLayout>
   )
