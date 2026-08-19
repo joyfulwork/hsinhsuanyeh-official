@@ -688,7 +688,13 @@ body.home .page, body.full-bleed .page {
   column-gap: 6.6%;
 }
 
-.masonry .item, .masonry .anim-item-link {
+.masonry .item {
+  display: block;
+  margin-bottom: 28.6%;
+  break-inside: avoid;
+}
+
+.masonry .anim-item-link {
   display: inline-block;
   margin-bottom: 72px;
   width: 100%;
@@ -957,6 +963,25 @@ body.home .page, body.full-bleed .page {
   pointer-events: none;
 }
 
+.project__hero--illustration img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.project__title {
+  margin: 0 0 28px;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.illus-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* fallback h1 (pages that don't use __hero wrapper) */
 .project > h1 {
   margin-bottom: 8px;
@@ -1012,6 +1037,82 @@ body.home .page, body.full-bleed .page {
   height: auto;
 }
 
+.illus-carousel {
+  display: grid;
+  width: min(860px, 100%);
+  grid-template-columns: minmax(0, 1fr) 118px;
+  align-items: start;
+  column-gap: 5px;
+  margin-top: 6px;
+}
+
+.illus-carousel__main {
+  position: relative;
+  overflow: hidden;
+  background: #f3eadf;
+}
+
+.illus-carousel__main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.illus-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: rgba(255, 246, 239, 0.15);
+  color: #fff6ef;
+  font-size: 28px;
+  line-height: 1;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.illus-carousel__arrow--prev {
+  left: 12px;
+}
+
+.illus-carousel__arrow--next {
+  right: 12px;
+}
+
+.illus-carousel__arrow:hover {
+  background: rgba(255, 246, 239, 0.3);
+}
+
+.illus-carousel__thumbs {
+  display: grid;
+  row-gap: 8px;
+  max-height: calc(118px * 5 + 8px * 4);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 4px;
+}
+
+.illus-carousel__thumb {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.illus-carousel__thumb.is-active {
+  opacity: 1;
+}
+
+.illus-carousel__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .project h2 {
   margin: 44px 0 16px;
   font-weight: 400;
@@ -1042,8 +1143,8 @@ body.home .page, body.full-bleed .page {
   inset: 0;
 }
 
-/* Masonry gallery ---------------------------------------- */
-.masonry {
+/* Masonry gallery (animation project pages) ---------------------------------------- */
+.project-masonry {
   margin-top: 36px;
   column-count: 2;
   column-gap: 16px;
@@ -1588,8 +1689,18 @@ body.home .page, body.full-bleed .page {
   }
   .son__credits { column-count: 1; }
 
-  .masonry, .grid.cols-2.animation-grid {
+  .masonry, .project-masonry, .grid.cols-2.animation-grid {
     column-count: 1;
+  }
+
+  .illus-carousel {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
+
+  .illus-carousel__thumbs {
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+    column-gap: 8px;
   }
 
   .grid {

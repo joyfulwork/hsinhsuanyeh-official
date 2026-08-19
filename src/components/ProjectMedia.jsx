@@ -79,7 +79,7 @@ export function ProjectMedia({ media, title }) {
   const items = flattenMedia(media)
 
   return (
-    <div className="masonry">
+    <div className="project-masonry">
       {items.map((item, index) => (
         <MasonryItem key={index} item={item} title={title} />
       ))}
