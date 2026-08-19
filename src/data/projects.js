@@ -178,6 +178,7 @@ Animation Assistants\tCheng Chen Kai, Ying-Hsuan Yeh, Hsin-Yu Liu, Shu Tzu Lin, 
     title: "Commissioned(3) Police's Christmas",
     metaLine: "Stopmotiom / 3' 35'' / 2022 / Solo Work",
     hero: 'd18541_0854b13e934d4725bdfcc8d007a1c110~mv2.png',
+    watch: 'https://www.youtube.com/watch?v=hrPWbcbMDxQ',
     desc: 'A commercial for Police Agency of Taiwan.',
     meta: {
       en: {
@@ -361,6 +362,7 @@ Brat Studio Presents`,
     title: 'Commissioned(2) Yanto Gorenji',
     metaLine: "2D / 1' 06'' / 2022 / Solo Work",
     hero: 'd18541_d21631d5c5294852b25c43d753abfc6c~mv2.png',
+    watch: 'http://www.youtube.com/watch?v=7DTjIJb1JYE',
     desc: 'A opening animation for theater projection.',
     meta: {
       en: {
@@ -439,7 +441,7 @@ TNUA Sophomore year I Production`,
 export const COMICS_GRID = [
   { href: '/comics/comeout/', image: 'd18541_bd0c131480224675a0b6cdcc96d6db4f~mv2.gif', alt: "Why don't you come out" },
   { image: 'd18541_75835dbfbbed43bdbbab1bfaaf55714d~mv2.jpg', alt: 'mole' },
-  { image: 'd18541_83384bd4b33b4c21ac4a3368124a9823~mv2.jpg', alt: 'eu1' },
+  { image: 'd18541_83384bd4b33b4c21ac4a3368124a9823~mv2.jpg', alt: 'no title, EU trip comic series' },
 ]
 
 export const ILLUSTRATION_GRID = [
@@ -450,16 +452,22 @@ export const ILLUSTRATION_GRID = [
     alt: 'Crystal',
   },
   {
+    slug: 'wild-spirit',
+    href: '/illustration/wild-spirit/',
+    image: 'd18541_1dc4c053cdf242bf98dab3cac4b4e740~mv2.jpg',
+    alt: 'ritual',
+  },
+  {
+    slug: 'under-the-sun',
+    href: '/illustration/under-the-sun/',
+    image: 'd18541_259b3b25a68a4bfd94a750c849abb33d~mv2.jpg',
+    alt: 'Morning in Lisbon',
+  },
+  {
     slug: 'spirit',
     href: '/illustration/spirit/',
     image: 'd18541_06086172ff43446e91fb03981f084855~mv2.jpg',
     alt: 'Spirit',
-  },
-  {
-    slug: 'watermelon',
-    href: '/illustration/watermelon/',
-    image: 'd18541_df91202a2a1b4d699d63ea8970ed1cd8~mv2.jpg',
-    alt: 'watermelon',
   },
   {
     slug: 'landscape-magazine-photoshoot',
@@ -468,28 +476,22 @@ export const ILLUSTRATION_GRID = [
     alt: 'Castle',
   },
   {
-    slug: 'wild-spirit',
-    href: '/illustration/wild-spirit/',
-    image: 'd18541_1dc4c053cdf242bf98dab3cac4b4e740~mv2.jpg',
-    alt: 'ritual',
-  },
-  {
-    slug: 'espinas-mezcal-ad',
-    href: '/illustration/espinas-mezcal-ad/',
-    image: 'd18541_f756b8b9380d49829e4fc529ce7cfede~mv2.jpg',
-    alt: 'Self-Portrait',
-  },
-  {
     slug: 'summer-secrets',
     href: '/illustration/summer-secrets/',
     image: 'd18541_17c114c2f1804bb6bc6ec18f0749e816~mv2.jpg',
     alt: 'Summer Secrets',
   },
   {
-    slug: 'under-the-sun',
-    href: '/illustration/under-the-sun/',
-    image: 'd18541_259b3b25a68a4bfd94a750c849abb33d~mv2.jpg',
-    alt: 'Morning in Lisbon',
+    slug: 'watermelon',
+    href: '/illustration/watermelon/',
+    image: 'd18541_df91202a2a1b4d699d63ea8970ed1cd8~mv2.jpg',
+    alt: 'watermelon',
+  },
+  {
+    slug: 'espinas-mezcal-ad',
+    href: '/illustration/espinas-mezcal-ad/',
+    image: 'd18541_f756b8b9380d49829e4fc529ce7cfede~mv2.jpg',
+    alt: 'Self-Portrait',
   },
   {
     slug: 'policeseries',
@@ -709,26 +711,26 @@ export const VR_SON = {
     'd18541_38082a7d9c8242a894933504e4e5cabd~mv2.jpg',
   ],
   clayImages: [
-    'd18541_6829bd47f90545b3b27a4fc8da607384~mv2.png',
-    'd18541_c576073106e34152bf1539a40239dadc~mv2.jpeg',
-    'd18541_ca0db01d03664f7a84636b23bcce3692~mv2.jpg',
-    'd18541_b2b20731f48e4f1da37d57b4fa63c87a~mv2.jpg',
-    'd18541_7b69e6d916bd4236a0e5b470f7f8c7df~mv2.jpg',
-    'd18541_a9301310f47a4ec08c7e01851b1b4098~mv2.jpg',
+    'd18541_6829bd47f90545b3b27a4fc8da607384~mv2.png',   // [0] making-of figure (pig sculpture)
+    'd18541_c576073106e34152bf1539a40239dadc~mv2.jpeg',  // [1] concept left
+    'd18541_ca0db01d03664f7a84636b23bcce3692~mv2.jpg',   // [2] concept right
+    'r060_a180.jpg',                                      // [3] clay left (hand)
+    'd18541_a9301310f47a4ec08c7e01851b1b4098~mv2.jpg',   // [4] clay mid (figure)
+    'r030_a020_edited.jpg',                               // [5] clay right (pepper)
   ],
   exhibitions: [
     {
-      title: 'NewImages Festival (WIP Presentation)',
+      title: 'NewImages Festival\n(WIP Presentation)',
       when: 'Paris, France\nApril 24th-28th, 2024\nProvided by TAICCA, Photo by Yi-Chen Lee',
       images: ['d18541_4f4d3e254ad9434e90c35f51ff2fc40d~mv2.jpg', 'd18541_711f789d7135432aa28f14d41ba71f41~mv2.jpg'],
     },
     {
-      title: 'Aalto University - Väre V2 Gallery (WIP Exhibition & Screening)',
+      title: 'Aalto University - Väre V2 Gallery\n(WIP Exhibition & Screening)',
       when: 'Espoo, Finland\nMay 14th-19th, 2024',
       images: ['d18541_83c94c63a07e411793abd66ac426209f~mv2.jpg', 'd18541_ee5ce5f7e70741f898b5788da6b7e0a8~mv2.jpg'],
     },
     {
-      title: 'TTXC (WIP Presentation)',
+      title: 'TTXC\n(WIP Presentation)',
       when: 'October 12th-27th, 2024\nKaohsiung, Taiwan',
       images: [
         'd18541_dd426dc1914545ba86b0e015ed2a5f1d~mv2.jpg',
@@ -737,7 +739,7 @@ export const VR_SON = {
       ],
     },
     {
-      title: 'Venice International Film Festival — Immersive Competition (World Premiere)',
+      title: 'Venice International Film Festival\nImmersive Competition\n(World Premiere)',
       when: 'August 27th-Sep 6th, 2025\nVenice, Italy',
       images: [
         'd18541_ada571a1d04f4515a5f607a1d262a3eb~mv2.jpg',
@@ -748,27 +750,34 @@ export const VR_SON = {
   ],
   credits: `Director, Script Writer\tHsin-Hsuan Yeh
 
-Chapter 1, Particle
-Visual Development\tYu-Jie Huang
-Programming
+\tChapter 1, Particle
+\t\tVisual Development\tYu-Jie Huang
+\t\tProgramming
 
-Chapter 2, Material
-Chapter 3, Subconsciousness
-Chapter 4, Reality
+\tChapter 2, Material
+\tChapter 3, Subconsciousness
+\tChapter 4, Reality
 
-Hand-Tracking\tKirjonen Markus
-Game Development\tBrian Chen
-Art Direction\tHsin-Hsuan Yeh
-Model Design
-Model Production
-Photogrammetry Scanning
-Rigging\tXin-Tien Li
-Animation
-Model Clean-Up\tChen Yen Hsun
-\tKevin Lai
-Technical Art\tBrian Chen
-3D Model and Texturing\tChen Yen Hsun
-Bus Environment Built-Up\tHsin-Hsuan Yeh
+\t\tHand-Tracking\tKirjonen Markus
+\t\tGame Development\tBrian Chen
+
+\t\tArt Direction\tHsin-Hsuan Yeh
+\t\tModel Design
+\t\tModel Production
+\t\tPhotogrammetry Scanning
+
+\t\tRigging\tXin-Tien Li
+\t\tAnimation
+
+\t\tModel Clean-Up\tChen Yen Hsun
+ \t\tKevin Lai
+
+\t\tTechnical Art\tBrian Chen
+
+\t\t3D Model and Texturing\tChen Yen Hsun
+\t\tBus Environment Built-Up\tHsin-Hsuan Yeh
+
+|||COLUMN_BREAK|||
 
 Sound Design\tBo-Yi Wu
 Fmod Integration
@@ -780,8 +789,8 @@ Tabla, Udu, Cuica, Pandeiro\tMeng-Hang Shih
 Gamelan Gong Kebyar, Kotsuzumi,\tSherwin Yang
 Nohkan, Ravanhatta
 Gamelan Gong Kebyar\tSeung Im Seo
-\tFusheng Chen
-\tDodo Hsu
+ \tFusheng Chen
+ \tDodo Hsu
 Didgeridoo\tJiro Yeh
 
 Recording Engineer\tWei-Kang Wang

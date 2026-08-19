@@ -8,7 +8,7 @@ function vimeoId(url) {
 function WixVideo({ poster, src, title }) {
   return (
     <video
-      className="project-gallery__video"
+      className="masonry-video"
       controls
       playsInline
       preload="metadata"
@@ -36,40 +36,53 @@ function VimeoEmbed({ id, title }) {
   )
 }
 
-function MediaItem({ item, title }) {
+// Flatten nested row/block structure into a single item list
+function flattenMedia(media) {
+  const items = []
+  for (const block of media) {
+    if (block.type === 'row') {
+      items.push(...block.items)
+    } else {
+      items.push(block)
+    }
+  }
+  return items
+}
+
+function MasonryItem({ item, title }) {
   if (item.type === 'image') {
-    return <img src={projectImage(item.file)} alt={`${title} still`} loading="lazy" />
+    return (
+      <div className="masonry-item">
+        <img src={projectImage(item.file)} alt={`${title} still`} loading="lazy" />
+      </div>
+    )
   }
   if (item.type === 'video') {
-    return <WixVideo poster={item.poster} src={item.src} title={title} />
+    return (
+      <div className="masonry-item masonry-item--video">
+        <WixVideo poster={item.poster} src={item.src} title={title} />
+      </div>
+    )
   }
   if (item.type === 'vimeo') {
-    return <VimeoEmbed id={item.id} title={title} />
+    return (
+      <div className="masonry-item masonry-item--video">
+        <VimeoEmbed id={vimeoId(item.url)} title={title} />
+      </div>
+    )
   }
   return null
 }
 
 export function ProjectMedia({ media, title }) {
   if (!media?.length) return null
+  const items = flattenMedia(media)
 
   return (
-    <div className="project-gallery">
-      {media.map((block, index) => {
-        if (block.type === 'row') {
-          return (
-            <div key={index} className={`project-gallery__row project-gallery__row--${block.items.length}`}>
-              {block.items.map((item, itemIndex) => (
-                <MediaItem key={itemIndex} item={item} title={title} />
-              ))}
-            </div>
-          )
-        }
-        return (
-          <div key={index} className="project-gallery__block">
-            <MediaItem item={block} title={title} />
-          </div>
-        )
-      })}
+    <div className="masonry">
+      {items.map((item, index) => (
+        <MasonryItem key={index} item={item} title={title} />
+      ))}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { Navigate, useParams } from 'react-router-dom'
 import { Link } from '../components/Link.jsx'
 import { PageLayout } from '../components/PageLayout.jsx'
-import { ProjectMedia, ProjectVimeoEmbed } from '../components/ProjectMedia.jsx'
+import { ProjectMedia } from '../components/ProjectMedia.jsx'
 import { usePageMeta } from '../hooks/usePageMeta.js'
 import { ANIMATION_DETAILS, ANIMATION_ORDER, projectImage } from '../data/projects.js'
 import { useLang } from '../i18n/LangProvider.jsx'
@@ -41,41 +41,47 @@ export default function AnimationProjectPage() {
   return (
     <PageLayout activeKey="animation">
       <div className="project">
-        <img className="hero-img" src={projectImage(project.hero)} alt={project.title} />
-        <h1>{project.title}</h1>
-        {project.metaLine ? <p className="meta">{project.metaLine}</p> : null}
-        {project.watch ? (
-          <a className="watch" href={project.watch} target="_blank" rel="noopener noreferrer">
-            Watch
-          </a>
-        ) : null}
-        {project.embedVimeo ? <ProjectVimeoEmbed watch={project.watch} title={project.title} /> : null}
-        {project.desc ? (
-          <p className="desc" style={{ whiteSpace: 'pre-line' }}>
-            {project.desc}
-          </p>
-        ) : null}
+        <div className="project__hero">
+          <img src={projectImage(project.hero)} alt={project.title} />
+          <h1>{project.title}</h1>
+        </div>
+        <div className="project__body">
+          {project.metaLine ? <p className="meta">{project.metaLine}</p> : null}
+          {project.watch ? (
+            <>
+              <a className="watch" href={project.watch} target="_blank" rel="noopener noreferrer">
+                Watch
+              </a>
+              <hr className="watch-divider" />
+            </>
+          ) : null}
+          {project.desc ? (
+            <p className="desc" style={{ whiteSpace: 'pre-line' }}>
+              {project.desc}
+            </p>
+          ) : null}
 
-        <ProjectMedia media={project.media} title={project.title} />
+          <ProjectMedia media={project.media} title={project.title} />
 
-        {project.credits ? (
-          <>
-            <h2>Credit</h2>
-            <div className="credits">{project.credits}</div>
-          </>
-        ) : null}
+          {project.credits ? (
+            <>
+              <h2>Credit</h2>
+              <div className="credits">{project.credits}</div>
+            </>
+          ) : null}
 
-        {project.festivals ? (
-          <>
-            <h2>Festivals</h2>
-            <div className="festivals">{project.festivals}</div>
-          </>
-        ) : null}
+          {project.festivals ? (
+            <>
+              <h2>Festivals</h2>
+              <div className="festivals">{project.festivals}</div>
+            </>
+          ) : null}
 
-        <div className="pnav">
-          {prevPath ? <Link to={prevPath}>Previous</Link> : <span />}
-          <Link to={listPath}>To List</Link>
-          {nextPath ? <Link to={nextPath}>Next</Link> : <span />}
+          <div className="pnav">
+            {prevPath ? <Link className="pnav__prev" to={prevPath}>Previous</Link> : null}
+            <Link className="pnav__list" to={listPath}>To List</Link>
+            {nextPath ? <Link className="pnav__next" to={nextPath}>Next</Link> : null}
+          </div>
         </div>
       </div>
     </PageLayout>
