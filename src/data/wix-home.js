@@ -3,12 +3,12 @@ export const WIX_HOME = {
   "badge": {
     "left": 454,
     "marginTop": 61,
-    "image": "d18541_611580096f15491894d65dd42c30de65~mv2.png",
-    "hoverImage": "d18541_bdbf8a992eb4480d8d81cdd88040cfa8~mv2(1).png",
+    "image": "home-badge-default.png",
+    "hoverImage": "home-badge-hover.png",
     "href": "/vr-son/"
   },
-  "pig": "d18541_514c5f92d85542ca9d40e3b54b959b1c~mv2.png",
-  "goose": "d18541_218fe4a006394f6b87ca15831690202c~mv2.png",
+  "pig": "home-pig.png",
+  "goose": "home-goose.png",
   "marquees": {
     "top": {
       "color": "#C7BCB4",
@@ -33,7 +33,7 @@ export const WIX_HOME = {
     {
       "id": "comp-m1qdvj3s",
       "href": "/comics/comeout/",
-      "image": "d18541_a11eaa4e35964183b165ef4d918c2dfd~mv2.jpg",
+      "image": "home-comeout-bubble.jpg",
       "alt": "Why don't you come out",
       "width": 296,
       "height": 346,
@@ -47,7 +47,7 @@ export const WIX_HOME = {
     {
       "id": "comp-m1qfat47",
       "href": "/illustration/summer-secrets/",
-      "image": "d18541_b9a05047f7fa41f985b933c89545a16a~mv2.jpg",
+      "image": "illus-summersecrets-gallery-03.jpg",
       "alt": "Summer Secrets",
       "width": 250,
       "height": 292,
@@ -61,7 +61,7 @@ export const WIX_HOME = {
     {
       "id": "comp-m1qdtqns",
       "href": "/vr-son/",
-      "image": "d18541_73998acfecbc43f3bf71ffe35a56feb8~mv2.jpg",
+      "image": "vr-son-scene-02.jpg",
       "alt": "Sense Of Nowhere",
       "width": 182,
       "height": 212,
@@ -75,7 +75,7 @@ export const WIX_HOME = {
     {
       "id": "comp-m1qdsezx",
       "href": "/animation/doitagain/",
-      "image": "d18541_96bf74b6144b40bcb0a5265b80abfc5d~mv2.jpg",
+      "image": "home-doitagain-bubble.jpg",
       "alt": "DO IT AGAIN",
       "width": 219,
       "height": 229,
@@ -89,7 +89,7 @@ export const WIX_HOME = {
     {
       "id": "comp-m1qdre76",
       "href": "/animation/ashes/",
-      "image": "d18541_840144796ab94fa3af333100d9fb5822~mv2.jpg",
+      "image": "anim-ashes-gallery-10.jpg",
       "alt": "Ashes",
       "width": 200,
       "height": 229,
@@ -103,7 +103,7 @@ export const WIX_HOME = {
     {
       "id": "comp-m1qextto",
       "static": true,
-      "image": "d18541_96e7be12865743b3853b0abfdf81cecc~mv2.png",
+      "image": "vr-animalspirits-bubble.png",
       "alt": "Animal Spirits VR",
       "fallback": "capture00005.png",
       "width": 204,
@@ -118,7 +118,7 @@ export const WIX_HOME = {
     {
       "id": "comp-m1qfd6fc",
       "static": true,
-      "image": "d18541_fffbaf53c65344d087a1af48b3abe42c~mv2.jpg",
+      "image": "home-lemon.jpg",
       "alt": "Lemon",
       "width": 195,
       "height": 195,

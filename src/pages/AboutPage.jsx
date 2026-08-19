@@ -15,7 +15,7 @@ export default function AboutPage() {
     canonicalPath: lang === 'zh' ? '/zh/about-contact/' : '/about-contact/',
     enPath,
     zhPath,
-    ogImage: '/assets/images/d18541_fffbaf53c65344d087a1af48b3abe42c~mv2.jpg',
+    ogImage: '/assets/images/home-lemon.jpg',
   })
 
   useJsonLd({
@@ -32,7 +32,7 @@ export default function AboutPage() {
   return (
     <PageLayout activeKey="about">
       <div className="about">
-        <img className="onion" src={projectImage('d18541_9dfa5ad846f44ab9af3d2bc99998bae8~mv2.png')} alt="" />
+        <img className="onion" src={projectImage('about-onion.png')} alt="" />
         <svg width="0" height="0" aria-hidden="true" className="about-filters">
           <filter id="about-purple" colorInterpolationFilters="sRGB">
             <feColorMatrix type="saturate" values="0" />
@@ -50,9 +50,6 @@ export default function AboutPage() {
             src={projectImage('about-photo-main.jpg')}
             alt={lang === 'zh' ? '葉信萱' : 'Hsin-Hsuan Yeh'}
           />
-          <div className="photo-accent">
-            <img src={projectImage('about-photo-accent.jpg')} alt="" />
-          </div>
         </div>
         <div className="bio">
           <h1>

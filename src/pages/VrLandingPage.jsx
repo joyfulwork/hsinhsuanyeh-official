@@ -23,14 +23,14 @@ export default function VrLandingPage() {
   return (
     <PageLayout activeKey="vr">
       <div className="vr-stage">
-        <img className="broccoli" src={projectImage('d18541_bdbf8a992eb4480d8d81cdd88040cfa8~mv2.png')} alt="" />
+        <img className="broccoli" src={projectImage('vr-broccoli.png')} alt="" />
         <Link to={vrSonPath} className="badge son-badge">
           <img className="badge-default" src={projectImage('vr-badge-default.png')} alt="Sense Of Nowhere" />
           <img className="badge-press" src={projectImage('vr-pig-press.png')} alt="" />
         </Link>
         <div className="badge flower">
-          <img className="badge-default" src={projectImage('d18541_6fc5e4e0023a4dfe868a8566b97d2c5d~mv2.png')} alt="" />
-          <img className="badge-press" src={projectImage('d18541_a602fb01e106493ca8a36240bca80987~mv2.png')} alt="" />
+          <img className="badge-default" src={projectImage('vr-flower-default.png')} alt="" />
+          <img className="badge-press" src={projectImage('vr-flower-press.png')} alt="" />
           <span className="tbc">{tbc}</span>
         </div>
       </div>

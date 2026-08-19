@@ -4,39 +4,39 @@ export const HOME_BUBBLES = [
   {
     href: '/comics/comeout/',
     style: { left: '14.5%', top: '5.3%', width: '22%', aspectRatio: '281/318' },
-    image: 'd18541_a11eaa4e35964183b165ef4d918c2dfd~mv2.jpg',
+    image: 'home-comeout-bubble.jpg',
     alt: "Why don't you come out",
     rotate: 6.5413450980419725,
   },
   {
     href: '/vr-son/',
     style: { left: '38.6%', top: '7.4%', width: '16.3%', aspectRatio: '209/234' },
-    image: 'd18541_73998acfecbc43f3bf71ffe35a56feb8~mv2.jpg',
+    image: 'vr-son-scene-02.jpg',
     alt: 'Sense Of Nowhere',
     rotate: 7.620762144727507,
   },
   {
     href: '/animation/ashes/',
     style: { left: '69.9%', top: '6.6%', width: '15.6%', aspectRatio: '200/229' },
-    image: 'd18541_840144796ab94fa3af333100d9fb5822~mv2.jpg',
+    image: 'anim-ashes-gallery-10.jpg',
     alt: 'Ashes',
   },
   {
     href: '/animation/doitagain/',
     style: { left: '53.4%', top: '23.9%', width: '17.1%', aspectRatio: '219/229' },
-    image: 'd18541_96bf74b6144b40bcb0a5265b80abfc5d~mv2.jpg',
+    image: 'home-doitagain-bubble.jpg',
     alt: 'DO IT AGAIN',
   },
   {
     href: '/illustration/summer-secrets/',
     style: { left: '18%', top: '37.7%', width: '26%', aspectRatio: '333/377' },
-    image: 'd18541_b9a05047f7fa41f985b933c89545a16a~mv2.jpg',
+    image: 'illus-summersecrets-gallery-03.jpg',
     alt: 'Summer Secrets',
     rotate: 353.5378734853472,
   },
   {
     style: { left: '47.7%', top: '52.1%', width: '15.9%', aspectRatio: '204/238' },
-    image: 'd18541_96e7be12865743b3853b0abfdf81cecc~mv2.png',
+    image: 'vr-animalspirits-bubble.png',
     alt: 'Animal Spirits VR',
     static: true,
   },
@@ -45,55 +45,55 @@ export const HOME_BUBBLES = [
 export const ANIMATION_GRID = [
   {
     href: '/animation/ashes/',
-    image: 'd18541_e48a4744c72d446f84e4296c51a6c02a~mv2.jpg',
+    image: 'anim-ashes-hero.jpg',
     alt: 'Ashes',
     title: 'Ashes',
   },
   {
     href: '/animation/commis2-police/',
-    image: 'd18541_0854b13e934d4725bdfcc8d007a1c110~mv2.png',
+    image: 'anim-police-hero.png',
     alt: "Commissioned(3) Police's Christmas",
     title: "Commissioned(3) Police's Christmas",
   },
   {
     href: '/animation/doitagain/',
-    image: 'd18541_edcbb8f412724d0683b7a58369feb8c8~mv2.jpg',
+    image: 'anim-doitagain-hero.jpg',
     alt: 'DO IT AGAIN',
     title: 'DO IT AGAIN',
   },
   {
     href: '/animation/lastsummer/',
-    image: 'd18541_9ae61ad3957c4f2f91258a85fa801693~mv2.jpg',
+    image: 'anim-lastsummer-hero.jpg',
     alt: 'The Last Day of Summer',
     title: 'The Last Day of Summer',
   },
   {
     href: '/animation/ws2/',
-    image: 'd18541_47941b1efdeb41219d9e823acc28ba02~mv2.jpg',
+    image: 'anim-ws2-hero.jpg',
     alt: 'WorkShops(2) Vilar, Portugal',
     title: 'WorkShops(2) Vilar, Portugal',
   },
   {
     href: '/animation/ws1/',
-    image: 'd18541_5f6ac23a03994f9bb66654b8289d5709~mv2.jpg',
+    image: 'anim-ws1-hero.jpg',
     alt: 'WorkShops(1) Montemor-o-Novo, Portugal',
     title: 'WorkShops(1) Montemor-o-Novo, Portugal',
   },
   {
     href: '/animation/comi-yanto/',
-    image: 'd18541_d21631d5c5294852b25c43d753abfc6c~mv2.png',
+    image: 'anim-yanto-hero.png',
     alt: 'Commissioned(2) Yanto Gorenji',
     title: 'Commissioned(2) Yanto Gorenji',
   },
   {
     href: '/animation/commission(1)/',
-    image: 'd18541_f05b7aa313a0433c83935a938582d20e~mv2.png',
+    image: 'anim-samuelsdrink-hero.png',
     alt: "Commissioned(1) Samuel's Magical Drink",
     title: "Commissioned(1) Samuel's Magical Drink",
   },
   {
     href: '/animation/cake/',
-    image: 'd18541_4996657883264bb291b9273e64d0547f~mv2.jpg',
+    image: 'anim-cake-hero.jpg',
     alt: 'A Piece Of Cake',
     title: 'A Piece Of Cake',
   },
@@ -123,28 +123,28 @@ export const ANIMATION_DETAILS = {
   ashes: {
     title: 'Ashes',
     metaLine: "2D, Stopmotion / 6' 00'' / 2020 / Solo Work",
-    hero: 'd18541_e48a4744c72d446f84e4296c51a6c02a~mv2.jpg',
+    hero: 'anim-ashes-hero.jpg',
     watch: 'https://vimeo.com/423972232',
     embedVimeo: true,
     desc: `If the fire nearby is already hard to rescue; how could you extinguish the flames that last forever?
 What you can do is let them be, and try to find things left in the ashes.`,
     media: [
       mediaRow(
-        mediaImage('d18541_18f57c761159489e945fa69a2064f584~mv2.png'),
-        mediaImage('d18541_2eea73b635644e52874462d1fdb2f201~mv2.jpg'),
-        mediaImage('d18541_7e74280a55534672839008a40032bda8~mv2.jpg'),
+        mediaImage('anim-ashes-gallery-01.jpg'),
+        mediaImage('anim-ashes-gallery-02.jpg'),
+        mediaImage('anim-ashes-gallery-03.jpg'),
       ),
       mediaRow(
-        mediaImage('d18541_2f64946f36304eb0818d9129042a0ecd~mv2.jpg'),
-        mediaImage('d18541_8dda0ec30a424208a1c9f4f5fe06c796~mv2.jpg'),
+        mediaImage('anim-ashes-gallery-04.jpg'),
+        mediaImage('anim-ashes-gallery-05.jpg'),
       ),
-      mediaImage('d18541_f63e88492cb44a5ba0629254e5338ccc~mv2.jpg'),
+      mediaImage('anim-ashes-gallery-06.jpg'),
       mediaRow(
-        mediaImage('d18541_cdec6d35c99c4529bdabf56c60411ba5~mv2.jpeg'),
-        mediaImage('d18541_22f1f598b99441c696f245fa5e7a9a10~mv2.jpg'),
+        mediaImage('anim-ashes-gallery-07.jpg'),
+        mediaImage('anim-ashes-gallery-08.jpg'),
       ),
-      mediaImage('d18541_29bf85e2b2694e85b53c0ad4832378a8~mv2.jpg'),
-      mediaImage('d18541_840144796ab94fa3af333100d9fb5822~mv2.jpg'),
+      mediaImage('anim-ashes-gallery-09.jpg'),
+      mediaImage('anim-ashes-gallery-10.jpg'),
     ],
     credits: `A film by\tHsin-Hsuan Yeh
 Voice Cast\tHsin-Hsuan Yeh, Wei-Chen Suo
@@ -177,7 +177,7 @@ Animation Assistants\tCheng Chen Kai, Ying-Hsuan Yeh, Hsin-Yu Liu, Shu Tzu Lin, 
   'commis2-police': {
     title: "Commissioned(3) Police's Christmas",
     metaLine: "Stopmotiom / 3' 35'' / 2022 / Solo Work",
-    hero: 'd18541_0854b13e934d4725bdfcc8d007a1c110~mv2.png',
+    hero: 'anim-police-hero.png',
     watch: 'https://www.youtube.com/watch?v=hrPWbcbMDxQ',
     desc: 'A commercial for Police Agency of Taiwan.',
     meta: {
@@ -194,31 +194,31 @@ Animation Assistants\tCheng Chen Kai, Ying-Hsuan Yeh, Hsin-Yu Liu, Shu Tzu Lin, 
   doitagain: {
     title: 'DO IT AGAIN',
     metaLine: "2D, Stopmotion / 4' 17'' / 2018 / Solo Work",
-    hero: 'd18541_edcbb8f412724d0683b7a58369feb8c8~mv2.jpg',
+    hero: 'anim-doitagain-hero.jpg',
     watch: 'https://vimeo.com/285239206',
     embedVimeo: true,
     desc: 'Not knowing who I am and what should I do, floating in the air, I am a bear in the mortal world. I always wander in the dead-end road, swinging back and forth between disgust and joy. When will I face my own desires without hating myself?',
     media: [
       mediaRow(
-        mediaImage('d18541_ea1c7bd6d5944876b61c5f126b43210a~mv2.jpg'),
-        mediaImage('d18541_8737976ca7e94d7b9112f8baa86f777d~mv2.jpg'),
+        mediaImage('anim-doitagain-gallery-01.jpg'),
+        mediaImage('anim-doitagain-gallery-02.jpg'),
       ),
       mediaRow(
-        mediaImage('d18541_4c64007f7e9f468494b147e02ebfc2f2~mv2.jpg'),
-        mediaImage('d18541_f20d5402356a4e9f91971528d095d728~mv2.jpg'),
-        mediaImage('d18541_365b130161c14b4cbd437215f338f872~mv2.jpg'),
+        mediaImage('anim-doitagain-gallery-03.jpg'),
+        mediaImage('anim-doitagain-gallery-04.jpg'),
+        mediaImage('anim-doitagain-gallery-05.jpg'),
       ),
-      mediaWixVideo('d18541_77d8cb1c000f46ab83ca377597b609f5f000.jpg'),
-      mediaImage('d18541_481b0f7e255946df852734665e636795~mv2.jpg'),
+      mediaWixVideo('anim-doitagain-poster.jpg'),
+      mediaImage('anim-doitagain-gallery-06.jpg'),
       mediaRow(
-        mediaImage('d18541_ef4450d26726464a8bf49c1265556f1d~mv2.jpg'),
-        mediaImage('d18541_d24c1bc16bfd42c29111a766fdfce8a9~mv2.jpg'),
+        mediaImage('anim-doitagain-gallery-07.jpg'),
+        mediaImage('anim-doitagain-gallery-08.jpg'),
       ),
       mediaRow(
-        mediaImage('d18541_7e313288754b46bb8f24387f4afa42a5~mv2.jpg'),
-        mediaImage('d18541_ba4875d499cb4688a2f3b04f8355d869~mv2.jpg'),
+        mediaImage('anim-doitagain-gallery-09.jpg'),
+        mediaImage('anim-doitagain-gallery-10.jpg'),
       ),
-      mediaImage('d18541_a5d4ca1665fe4d1aa53139f44aa4afe0~mv2.jpg'),
+      mediaImage('anim-doitagain-gallery-11.jpg'),
     ],
     credits: `Direction, Animation, Script\tHsin-Hsuan Yeh
 Music\tTt`,
@@ -258,18 +258,18 @@ Music\tTt`,
   lastsummer: {
     title: 'The Last Day of Summer',
     metaLine: "2D / 3' 55'' / 2018 / Group Project",
-    hero: 'd18541_9ae61ad3957c4f2f91258a85fa801693~mv2.jpg',
+    hero: 'anim-lastsummer-hero.jpg',
     watch: 'https://vimeo.com/258406461',
     embedVimeo: true,
     desc: 'On a calm summer day, children want to have a different end of the vacation......',
     media: [
       mediaRow(
-        mediaImage('d18541_85a79183212c45c2a694515e58640ef0~mv2.jpg'),
-        mediaImage('d18541_a9d5a70ec2104fa0a4c3b9378f1167cb~mv2.jpg'),
+        mediaImage('anim-lastsummer-gallery-01.jpg'),
+        mediaImage('anim-lastsummer-gallery-02.jpg'),
       ),
       mediaRow(
-        mediaImage('d18541_53d16986bba34e08b0d0e659f4c09117~mv2.jpg'),
-        mediaImage('d18541_ffae509ba78a4c3fa7f5a60f0764bfcd~mv2.jpg'),
+        mediaImage('anim-lastsummer-gallery-03.jpg'),
+        mediaImage('anim-lastsummer-gallery-04.jpg'),
       ),
     ],
     credits: `Director：Tzu-Chun Chou / Hsin-Hsuan Yeh / Tzu-Ying Chen
@@ -315,14 +315,14 @@ Brat Studio Presents`,
   ws2: {
     title: 'WorkShops(2) Vilar, Portugal',
     metaLine: "2D / 0' 3'' / 2023 / Solo Work",
-    hero: 'd18541_47941b1efdeb41219d9e823acc28ba02~mv2.jpg',
+    hero: 'anim-ws2-hero.jpg',
     desc: 'Workshop in Vilar, Portugal. Learning incredibly beautiful techniques with Regina Pessoa.\nSuch a wonderful trip :)',
     media: [
       mediaRow(
-        mediaWixVideo('d18541_92f6db884bbc455b8402ff4cf11e918df000.jpg'),
-        mediaImage('d18541_9230c0c5e3b94d58b336a21f0d9b30ee~mv2.png'),
+        mediaWixVideo('anim-ws2-poster.jpg'),
+        mediaImage('anim-ws2-gallery-01.png'),
       ),
-      mediaImage('d18541_723bc57f845448a79103829b1e39e75c~mv2.png'),
+      mediaImage('anim-ws2-gallery-02.png'),
     ],
     meta: {
       en: {
@@ -338,14 +338,14 @@ Brat Studio Presents`,
   ws1: {
     title: 'WorkShops(1) Montemor-o-Novo, Portugal',
     metaLine: "2D / 0' 17'' / 2023 / Solo Work",
-    hero: 'd18541_5f6ac23a03994f9bb66654b8289d5709~mv2.jpg',
+    hero: 'anim-ws1-hero.jpg',
     desc: 'A week of workshop in Montemor-o-Novo, Portugal. Have some fun in this cozy little town and great experience',
     media: [
       mediaRow(
-        mediaWixVideo('d18541_22863652044f4184b63543c38be7a9ecf000.jpg'),
-        mediaImage('d18541_b33869baccf94476a3296aa891504acb~mv2.jpg'),
+        mediaWixVideo('anim-ws1-poster.jpg'),
+        mediaImage('anim-ws1-gallery-01.jpg'),
       ),
-      mediaImage('d18541_6914c847fe1747d7936915a775035104~mv2.jpg'),
+      mediaImage('anim-ws1-gallery-02.jpg'),
     ],
     meta: {
       en: {
@@ -361,7 +361,7 @@ Brat Studio Presents`,
   'comi-yanto': {
     title: 'Commissioned(2) Yanto Gorenji',
     metaLine: "2D / 1' 06'' / 2022 / Solo Work",
-    hero: 'd18541_d21631d5c5294852b25c43d753abfc6c~mv2.png',
+    hero: 'anim-yanto-hero.png',
     watch: 'http://www.youtube.com/watch?v=7DTjIJb1JYE',
     desc: 'A opening animation for theater projection.',
     meta: {
@@ -378,12 +378,12 @@ Brat Studio Presents`,
   'commission(1)': {
     title: "Commissioned(1) Samuel's Magical Drink",
     metaLine: "2D / 0' 20''/ 2021 / Solo Work",
-    hero: 'd18541_f05b7aa313a0433c83935a938582d20e~mv2.png',
+    hero: 'anim-samuelsdrink-hero.png',
     desc: "A Youtube Channel's Opening animation. With this project, I created some characters.",
     media: [
       mediaRow(
-        mediaWixVideo('d18541_8605b9ada4f64ee283fe039f0533eb5af000.jpg'),
-        mediaImage('d18541_2a3c910936f845feaf4e06da03e507df~mv2.jpg'),
+        mediaWixVideo('anim-samuelsdrink-poster.jpg'),
+        mediaImage('anim-samuelsdrink-gallery-01.jpg'),
       ),
     ],
     meta: {
@@ -400,22 +400,22 @@ Brat Studio Presents`,
   cake: {
     title: 'A Piece Of Cake',
     metaLine: "2D / 4' 12'' / 2016 / Group Project",
-    hero: 'd18541_4996657883264bb291b9273e64d0547f~mv2.jpg',
+    hero: 'anim-cake-hero.jpg',
     watch: 'https://vimeo.com/210289444',
     embedVimeo: true,
     desc: 'The little girl is not accepted by the rabbits ,so she tried her best to join them...',
     media: [
       mediaRow(
-        mediaImage('d18541_0a3a977237da4fff8f73db3c99bce8a1~mv2.jpg'),
-        mediaImage('d18541_f5447211d204427e908095e593db4800~mv2.jpg'),
+        mediaImage('anim-cake-gallery-01.jpg'),
+        mediaImage('anim-cake-gallery-02.jpg'),
       ),
       mediaRow(
-        mediaImage('d18541_ebd8a893183644a58be1e57d44be5b0b~mv2.jpg'),
-        mediaImage('d18541_91033888bf8648268d499b1b637f713a~mv2.jpg'),
+        mediaImage('anim-cake-gallery-03.jpg'),
+        mediaImage('anim-cake-gallery-04.jpg'),
       ),
       mediaRow(
-        mediaImage('d18541_be9f53f5a1c246f6970ebb01dd558754~mv2.jpg'),
-        mediaImage('d18541_3224c294bba946ae996080102c457cf1~mv2.jpg'),
+        mediaImage('anim-cake-gallery-05.jpg'),
+        mediaImage('anim-cake-gallery-06.jpg'),
       ),
     ],
     credits: `Director, Screenwriter, Animation, Coloring
@@ -439,64 +439,64 @@ TNUA Sophomore year I Production`,
 }
 
 export const COMICS_GRID = [
-  { href: '/comics/comeout/', image: 'd18541_bd0c131480224675a0b6cdcc96d6db4f~mv2.gif', alt: "Why don't you come out" },
-  { image: 'd18541_75835dbfbbed43bdbbab1bfaaf55714d~mv2.jpg', alt: 'mole' },
-  { image: 'd18541_83384bd4b33b4c21ac4a3368124a9823~mv2.jpg', alt: 'no title, EU trip comic series' },
+  { href: '/comics/comeout/', image: 'comics-comeout-hero.gif', alt: "Why don't you come out" },
+  { image: 'illus-mole.jpg', alt: 'mole' },
+  { image: 'comics-eutrip-series.jpg', alt: 'no title, EU trip comic series' },
 ]
 
 export const ILLUSTRATION_GRID = [
   {
     slug: 'crystal',
     href: '/illustration/crystal/',
-    image: 'd18541_3f05f9e3b599498b934176ced5ce20e2~mv2.jpg',
+    image: 'illus-crystal-hero.jpg',
     alt: 'Crystal',
   },
   {
     slug: 'wild-spirit',
     href: '/illustration/wild-spirit/',
-    image: 'd18541_1dc4c053cdf242bf98dab3cac4b4e740~mv2.jpg',
+    image: 'illus-ritual-hero.jpg',
     alt: 'ritual',
   },
   {
     slug: 'under-the-sun',
     href: '/illustration/under-the-sun/',
-    image: 'd18541_259b3b25a68a4bfd94a750c849abb33d~mv2.jpg',
+    image: 'illus-morninglisbon-hero.jpg',
     alt: 'Morning in Lisbon',
   },
   {
     slug: 'spirit',
     href: '/illustration/spirit/',
-    image: 'd18541_06086172ff43446e91fb03981f084855~mv2.jpg',
+    image: 'illus-spirit-hero.jpg',
     alt: 'Spirit',
   },
   {
     slug: 'landscape-magazine-photoshoot',
     href: '/illustration/landscape-magazine-photoshoot/',
-    image: 'd18541_020829819ae74536b1dfe818afcec74b~mv2.jpg',
+    image: 'illus-castle-hero.jpg',
     alt: 'Castle',
   },
   {
     slug: 'summer-secrets',
     href: '/illustration/summer-secrets/',
-    image: 'd18541_17c114c2f1804bb6bc6ec18f0749e816~mv2.jpg',
+    image: 'illus-summersecrets-hero.jpg',
     alt: 'Summer Secrets',
   },
   {
     slug: 'watermelon',
     href: '/illustration/watermelon/',
-    image: 'd18541_df91202a2a1b4d699d63ea8970ed1cd8~mv2.jpg',
+    image: 'illus-watermelon-hero.jpg',
     alt: 'watermelon',
   },
   {
     slug: 'espinas-mezcal-ad',
     href: '/illustration/espinas-mezcal-ad/',
-    image: 'd18541_f756b8b9380d49829e4fc529ce7cfede~mv2.jpg',
+    image: 'illus-selfportrait-hero.jpg',
     alt: 'Self-Portrait',
   },
   {
     slug: 'policeseries',
     href: '/illustration/policeseries/',
-    image: 'd18541_8f353d3996f44d568a1706f89d0e5003~mv2.jpg',
+    image: 'illus-policeseries-hero.jpg',
     alt: 'NPA Commissioned Series',
   },
 ]
@@ -522,66 +522,66 @@ function illustrationProject(title, hero, gallery = []) {
 }
 
 export const ILLUSTRATION_DETAILS = {
-  crystal: illustrationProject('Crystal', 'd18541_3f05f9e3b599498b934176ced5ce20e2~mv2.jpg', [
-    'd18541_72a95883dc614d429226cb3a0adb8656~mv2.jpg',
+  crystal: illustrationProject('Crystal', 'illus-crystal-hero.jpg', [
+    'illus-crystal-gallery-01.jpg',
   ]),
-  spirit: illustrationProject('Spirit', 'd18541_06086172ff43446e91fb03981f084855~mv2.jpg', [
-    'd18541_cb7e288f728844f9b43f912f4eedcd33~mv2.jpg',
-    'd18541_efe386b742c94b4cb1b8394eecdac0f6~mv2.jpg',
+  spirit: illustrationProject('Spirit', 'illus-spirit-hero.jpg', [
+    'illus-spirit-gallery-01.jpg',
+    'illus-spirit-gallery-02.jpg',
   ]),
-  watermelon: illustrationProject('watermelon', 'd18541_df91202a2a1b4d699d63ea8970ed1cd8~mv2.jpg', [
-    'd18541_ebec53fe269442eb984fb2cbe0c7fa52~mv2.jpg',
-    'd18541_9107a56121a645cd8facffafd5f54af6~mv2.jpg',
+  watermelon: illustrationProject('watermelon', 'illus-watermelon-hero.jpg', [
+    'illus-watermelon-gallery-01.jpg',
+    'illus-watermelon-gallery-02.jpg',
   ]),
   'landscape-magazine-photoshoot': illustrationProject(
     'Castle',
-    'd18541_020829819ae74536b1dfe818afcec74b~mv2.jpg',
+    'illus-castle-hero.jpg',
     [
-      'd18541_05f95e31a30b4535923fe36b5ffa291a~mv2.jpg',
-      'd18541_4d105c789e694a34a36cdb23bf1e0d9f~mv2.jpg',
-      'd18541_cbf75a504f154300bc72d122a65f9fef~mv2.jpg',
+      'illus-castle-gallery-01.jpg',
+      'illus-castle-gallery-02.jpg',
+      'illus-castle-gallery-03.jpg',
     ],
   ),
-  'wild-spirit': illustrationProject('ritual', 'd18541_1dc4c053cdf242bf98dab3cac4b4e740~mv2.jpg', [
-    'd18541_4e6418cad20f477fba70ff1b81055670~mv2.jpg',
-    'd18541_46c21d913cfb4c039ef09e7f27bc6c02~mv2.jpg',
-    'd18541_9a4f50638e9a491b8efc5bae9adec98b~mv2.jpg',
-    'd18541_b1a8a7c3311b4766b172ac1a83e9dc1a~mv2.jpg',
+  'wild-spirit': illustrationProject('ritual', 'illus-ritual-hero.jpg', [
+    'illus-ritual-gallery-01.jpg',
+    'illus-ritual-gallery-02.jpg',
+    'illus-ritual-gallery-03.jpg',
+    'illus-ritual-gallery-04.jpg',
   ]),
-  'espinas-mezcal-ad': illustrationProject('Self-Portrait', 'd18541_f756b8b9380d49829e4fc529ce7cfede~mv2.jpg', [
-    'd18541_71a974eb2dbd41dcae732f6274e27596~mv2.jpg',
-    'd18541_62e827a5336a4b6eb5a6b0d41786d12b~mv2.jpeg',
-    'd18541_fa893e871b2546dd867aecc755281542~mv2.jpg',
-    'd18541_aebcc40a612c4d1cb669f9122146d3f2~mv2.jpg',
-    'd18541_61cc284c99d9487e91a06af09ed2100e~mv2.jpg',
-    'd18541_14919acda36a424cb1fdb5b85fdf1c09~mv2.jpg',
-    'd18541_0ba26233c6384653835834d61ba916c5~mv2.jpg',
-    'd18541_ad18da9e50b54742a8aa5ffcdcc10179~mv2.jpg',
-    'd18541_327c53a82aaa4238867e2d19a2166473~mv2.jpg',
+  'espinas-mezcal-ad': illustrationProject('Self-Portrait', 'illus-selfportrait-hero.jpg', [
+    'illus-selfportrait-gallery-01.jpg',
+    'illus-selfportrait-gallery-02.jpeg',
+    'illus-selfportrait-gallery-03.jpg',
+    'illus-selfportrait-gallery-04.jpg',
+    'illus-selfportrait-gallery-05.jpg',
+    'illus-selfportrait-gallery-06.jpg',
+    'illus-selfportrait-gallery-07.jpg',
+    'illus-selfportrait-gallery-08.jpg',
+    'illus-selfportrait-gallery-09.jpg',
   ]),
-  'summer-secrets': illustrationProject('Summer Secrets', 'd18541_17c114c2f1804bb6bc6ec18f0749e816~mv2.jpg', [
-    'd18541_910e6176af494718b55e4301ee947ad2~mv2.jpg',
-    'd18541_5b40813877f44ab8a1d318edd3466466~mv2.jpg',
-    'd18541_b9a05047f7fa41f985b933c89545a16a~mv2.jpg',
+  'summer-secrets': illustrationProject('Summer Secrets', 'illus-summersecrets-hero.jpg', [
+    'illus-summersecrets-gallery-01.jpg',
+    'illus-summersecrets-gallery-02.jpg',
+    'illus-summersecrets-gallery-03.jpg',
   ]),
-  'under-the-sun': illustrationProject('Morning in Lisbon', 'd18541_259b3b25a68a4bfd94a750c849abb33d~mv2.jpg', [
-    'd18541_4aa2ff2744364bac932978ed4e77664b~mv2.jpg',
-    'd18541_beb173c47fc94c4195c363269ab1bd62~mv2.jpg',
-    'd18541_ee060432111d472dbe81e380ba2506f6~mv2.jpg',
-    'd18541_354ff9de62e046f9addbabe9c3ff7f88~mv2.jpg',
+  'under-the-sun': illustrationProject('Morning in Lisbon', 'illus-morninglisbon-hero.jpg', [
+    'illus-morninglisbon-gallery-01.jpg',
+    'illus-morninglisbon-gallery-02.jpg',
+    'illus-morninglisbon-gallery-03.jpg',
+    'illus-morninglisbon-gallery-04.jpg',
   ]),
-  policeseries: illustrationProject('NPA Commissioned Series', 'd18541_8f353d3996f44d568a1706f89d0e5003~mv2.jpg', [
-    'd18541_c6bb4d0da3e843e4ab820851f419aa2d~mv2.jpg',
-    'd18541_cc8833eecff84d0e8f3b7a7addbdcdcf~mv2.jpg',
-    'd18541_8a39dee0bae44d9291e5912f285c0841~mv2.jpg',
-    'd18541_1051cb5a104c4685a03b6be6ce4efef1~mv2.jpg',
-    'd18541_2cc31c39767e45f083226693de249db3~mv2.jpg',
-    'd18541_59713f7a28144d42b7a0a02ee9c40297~mv2.jpg',
-    'd18541_be7c93c61bf1468eb43336bff58b2c33~mv2.jpg',
-    'd18541_bb893d0e02d642e8b98e3024c2068307~mv2.jpg',
-    'd18541_082bbe72fdbb453d806758328e951f87~mv2.jpg',
-    'd18541_a33c98e1999a400ca47e10216d9da3a2~mv2.jpg',
-    'd18541_2f62f37bfbf64bb7b3083e38767b0d73~mv2.jpg',
+  policeseries: illustrationProject('NPA Commissioned Series', 'illus-policeseries-hero.jpg', [
+    'illus-policeseries-gallery-01.jpg',
+    'illus-policeseries-gallery-02.jpg',
+    'illus-policeseries-gallery-03.jpg',
+    'illus-policeseries-gallery-04.jpg',
+    'illus-policeseries-gallery-05.jpg',
+    'illus-policeseries-gallery-06.jpg',
+    'illus-policeseries-gallery-07.jpg',
+    'illus-policeseries-gallery-08.jpg',
+    'illus-policeseries-gallery-09.jpg',
+    'illus-policeseries-gallery-10.jpg',
+    'illus-policeseries-gallery-11.jpg',
   ]),
 }
 
@@ -600,15 +600,15 @@ export const ABOUT = {
 
 export const ASHES = {
   title: 'Ashes',
-  hero: 'd18541_e48a4744c72d446f84e4296c51a6c02a~mv2.jpg',
+  hero: 'anim-ashes-hero.jpg',
   meta: "2D, Stopmotion / 6' 00'' / 2020 / Solo Work",
   watch: 'https://vimeo.com/423972232',
   desc: `If the fire nearby is already hard to rescue; how could you extinguish the flames that last forever?
 What you can do is let them be, and try to find things left in the ashes.`,
   gallery: [
-    'd18541_18f57c761159489e945fa69a2064f584~mv2.png',
-    'd18541_2eea73b635644e52874462d1fdb2f201~mv2.jpg',
-    'd18541_7e74280a55534672839008a40032bda8~mv2.jpg',
+    'anim-ashes-gallery-01.jpg',
+    'anim-ashes-gallery-02.jpg',
+    'anim-ashes-gallery-03.jpg',
   ],
   credits: `A film by\tHsin-Hsuan Yeh
 Voice Cast\tHsin-Hsuan Yeh, Wei-Chen Suo
@@ -630,13 +630,13 @@ Animation Assistants\tCheng Chen Kai, Ying-Hsuan Yeh, Hsin-Yu Liu, Shu Tzu Lin, 
 
 export const DO_IT_AGAIN = {
   title: 'DO IT AGAIN',
-  hero: 'd18541_edcbb8f412724d0683b7a58369feb8c8~mv2.jpg',
+  hero: 'anim-doitagain-hero.jpg',
   meta: "2D, Stopmotion / 4' 17'' / 2018 / Solo Work",
   watch: 'https://vimeo.com/285239206',
   desc: 'Not knowing who I am and what should I do, floating in the air, I am a bear in the mortal world. I always wander in the dead-end road, swinging back and forth between disgust and joy. When will I face my own desires without hating myself?',
   gallery: [
-    'd18541_ea1c7bd6d5944876b61c5f126b43210a~mv2.jpg',
-    'd18541_8737976ca7e94d7b9112f8baa86f777d~mv2.jpg',
+    'anim-doitagain-gallery-01.jpg',
+    'anim-doitagain-gallery-02.jpg',
   ],
   credits: `Direction, Animation, Script\tHsin-Hsuan Yeh
 Music\tTt`,
@@ -666,12 +666,12 @@ Music\tTt`,
 
 export const COMEOUT = {
   title: "Why don't you come out?",
-  hero: 'd18541_bd0c131480224675a0b6cdcc96d6db4f~mv2.gif',
+  hero: 'comics-comeout-hero.gif',
   meta: '2021 · WebComic / Animated / 8P',
   desc: 'During the pandemic, freedom of going anywhere as a human was limited. While the animals came back to streets or national parks, they enjoyed the freedom once again.',
   pages: [
-    'd18541_2238076d72084a6a93e619c7ac09d0dd~mv2.gif',
-    'd18541_e71208b4d5cf45afa2deebae9812835d~mv2.gif',
+    'comics-comeout-page-01.gif',
+    'comics-comeout-page-02.gif',
   ],
 }
 
@@ -705,46 +705,46 @@ export const VR_SON = {
       '本專案於歐洲聯合碩士 RE:Anima 計畫中發展。\n本專案於 Villa Formose Immersive — France XR Prototyping Residency 期間持續發展。',
   },
   conceptImages: [
-    'd18541_b0b127927fa84b90b9f2e0b3ddfee282~mv2.png',
-    'd18541_134e1bb803ed4c2e9db9791ef1aca53a~mv2.png',
-    'd18541_73998acfecbc43f3bf71ffe35a56feb8~mv2.jpg',
-    'd18541_38082a7d9c8242a894933504e4e5cabd~mv2.jpg',
+    'vr-son-concept-pig.png',
+    'vr-son-scene-01.png',
+    'vr-son-scene-02.jpg',
+    'vr-son-scene-03.jpg',
   ],
   clayImages: [
-    'd18541_6829bd47f90545b3b27a4fc8da607384~mv2.png',   // [0] making-of figure (pig sculpture)
-    'd18541_c576073106e34152bf1539a40239dadc~mv2.jpeg',  // [1] concept left
-    'd18541_ca0db01d03664f7a84636b23bcce3692~mv2.jpg',   // [2] concept right
-    'r060_a180.jpg',                                      // [3] clay left (hand)
-    'd18541_a9301310f47a4ec08c7e01851b1b4098~mv2.jpg',   // [4] clay mid (figure)
-    'r030_a020_edited.jpg',                               // [5] clay right (pepper)
+    'vr-son-makingof-figure.png',                        // [0] making-of figure (pig sculpture)
+    'vr-son-concept-01.jpg',                            // [1] concept left
+    'vr-son-concept-02.jpg',                            // [2] concept right
+    'vr-son-clay-hand.jpg',                               // [3] clay left (hand)
+    'vr-son-clay-figure-02.jpg',                        // [4] clay mid (figure)
+    'vr-son-clay-pepper.jpg',                             // [5] clay right (pepper)
   ],
   exhibitions: [
     {
       title: 'NewImages Festival\n(WIP Presentation)',
       when: 'Paris, France\nApril 24th-28th, 2024\nProvided by TAICCA, Photo by Yi-Chen Lee',
-      images: ['d18541_4f4d3e254ad9434e90c35f51ff2fc40d~mv2.jpg', 'd18541_711f789d7135432aa28f14d41ba71f41~mv2.jpg'],
+      images: ['vr-son-exhibition-newimages-01.jpg', 'vr-son-exhibition-newimages-02.jpg'],
     },
     {
       title: 'Aalto University - Väre V2 Gallery\n(WIP Exhibition & Screening)',
       when: 'Espoo, Finland\nMay 14th-19th, 2024',
-      images: ['d18541_83c94c63a07e411793abd66ac426209f~mv2.jpg', 'd18541_ee5ce5f7e70741f898b5788da6b7e0a8~mv2.jpg'],
+      images: ['vr-son-exhibition-aalto-01.jpg', 'vr-son-exhibition-aalto-02.jpg'],
     },
     {
       title: 'TTXC\n(WIP Presentation)',
       when: 'October 12th-27th, 2024\nKaohsiung, Taiwan',
       images: [
-        'd18541_dd426dc1914545ba86b0e015ed2a5f1d~mv2.jpg',
-        'd18541_de6fecf24ccf43a5bce2d5c1da1d9a29~mv2.jpg',
-        'd18541_a4be016eb4df4dcaaa476070066e7ca5~mv2.jpg',
+        'vr-son-exhibition-ttxc-01.jpg',
+        'vr-son-exhibition-ttxc-02.jpg',
+        'vr-son-exhibition-ttxc-03.jpg',
       ],
     },
     {
       title: 'Venice International Film Festival\nImmersive Competition\n(World Premiere)',
       when: 'August 27th-Sep 6th, 2025\nVenice, Italy',
       images: [
-        'd18541_ada571a1d04f4515a5f607a1d262a3eb~mv2.jpg',
-        'd18541_1525e39e93e24c1b86fabb79e04011b8~mv2.jpg',
-        'd18541_4b1d3213a52f421d8a496810dd7856c6~mv2.jpg',
+        'vr-son-exhibition-venice-01.jpg',
+        'vr-son-exhibition-venice-02.jpg',
+        'vr-son-exhibition-venice-03.jpg',
       ],
     },
   ],
@@ -797,8 +797,8 @@ Recording Engineer\tWei-Kang Wang
 Recording Studio\tHMP Studio
 Recording Studio - Gamelan\tNTU GIM
 Mixing Engineer\tSherwin Yang`,
-  hero: 'd18541_97697eff1ec64893be7e63ece1509068~mv2.jpg',
-  poster: 'd18541_53aad41e03604e2eb826527a043d9677f000.jpg',
+  hero: 'vr-son-hero.jpg',
+  poster: 'vr-animalspirits-poster.jpg',
 }
 
 export function projectImage(filename) {

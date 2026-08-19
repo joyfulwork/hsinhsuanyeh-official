@@ -2,19 +2,19 @@ export const SITE = {
   name: 'Hsin Hsuan Yeh',
   domain: 'https://www.hsinhsuanyeh.com',
   email: 'joyfulbeings.animation@gmail.com',
-  defaultOgImage: '/assets/images/d18541_d36828e100dd4bd1b0a1b7a62ef89ba6~mv2.png',
+  defaultOgImage: '/assets/images/site-avatar-01.png',
 }
 
 export const AVATAR_FRAMES = [
-  'd18541_d36828e100dd4bd1b0a1b7a62ef89ba6~mv2.png',
-  'd18541_ed2571ff463e4ddabc7d011d9f0f1a95~mv2.png',
+  'site-avatar-01.png',
+  'site-avatar-02.png',
 ]
 
 export const SOCIALS = [
-  ['Instagram', 'https://www.instagram.com/hsuan_.art/', 'd7ffe259c9e54f59837481b3dd0130eb.png'],
-  ['Vimeo', 'https://vimeo.com/user39816187', '1422b22453ff489bbe36b58b1e642f3e.png'],
-  ['LinkedIn', 'https://www.linkedin.com/in/hsin-hsuan-yeh-7474b6231/', '11062b_701377645cb348b9bd31d5ae3a7c85e0~mv2.png'],
-  ['Facebook', 'https://www.facebook.com/hsinhsuan.yeh/', 'd3470ec8ca26475da4b228f0199b5d3d.png'],
+  ['Instagram', 'https://www.instagram.com/hsuan_.art/', 'social-instagram.png'],
+  ['Vimeo', 'https://vimeo.com/user39816187', 'social-vimeo.png'],
+  ['LinkedIn', 'https://www.linkedin.com/in/hsin-hsuan-yeh-7474b6231/', 'social-linkedin.png'],
+  ['Facebook', 'https://www.facebook.com/hsinhsuan.yeh/', 'social-facebook.png'],
 ]
 
 export const NAV = {
