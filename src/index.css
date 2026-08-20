@@ -8,13 +8,15 @@ body,
   min-height: 100%;
 }
 
+/* Reduced motion means gentler, not none: keep the fades that explain a state
+   change, drop everything that moves. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    transition-property: opacity, color, background-color, border-color, fill !important;
     scroll-behavior: auto !important;
   }
 }

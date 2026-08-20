@@ -22,15 +22,24 @@ export function useBubbleScrollReveal() {
     if (!section) return undefined
 
     const bubbles = section.querySelectorAll('[data-animate-blur]')
+
+    // every scroll event forced a layout read + style write per bubble; coalesce
+    // them into one frame so a fling doesn't thrash
+    let frame = 0
     const onScroll = () => {
-      bubbles.forEach(updateBubbleReveal)
+      if (frame) return
+      frame = requestAnimationFrame(() => {
+        frame = 0
+        bubbles.forEach(updateBubbleReveal)
+      })
     }
 
-    onScroll()
+    bubbles.forEach(updateBubbleReveal)
     window.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', onScroll)
 
     return () => {
+      if (frame) cancelAnimationFrame(frame)
       window.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
     }
