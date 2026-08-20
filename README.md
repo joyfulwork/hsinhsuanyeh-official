@@ -23,9 +23,23 @@ Open http://localhost:5173/
 ```bash
 npm run build
 npm run preview
+# 本機模擬 Pages：npm run dev:pages
+# 手動發佈：npm run deploy（需先 wrangler login）
 ```
 
-Output goes to `dist/`. For Cloudflare Pages (like tekuei-official), `public/_redirects` provides SPA fallback.
+Output goes to `dist/`。`public/_redirects` 提供 SPA fallback。
+
+### Cloudflare Pages 建置設定（Git 連動）
+
+到 **Workers & Pages → hsinhsuanyeh-official → Settings → Builds**：
+
+| 欄位 | 值 |
+|------|-----|
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Deploy command | `npm run deploy`（或完全留空） |
+
+**請勿使用** `npx wrangler deploy`——那是獨立 Worker 指令。
 
 ## Structure
 

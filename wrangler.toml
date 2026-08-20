@@ -1,0 +1,11 @@
+# Cloudflare Pages：建置輸出目錄 dist
+#
+# Pages 建置設定（Git 連動）：
+#   Build command:     npm run build
+#   Build output:      dist
+#   Deploy command:    npm run deploy（或留空；勿用 npx wrangler deploy）
+# Git push 後 Pages 會自動發佈 dist，不需額外 deploy 指令。
+
+name = "hsinhsuanyeh-official"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "dist"
