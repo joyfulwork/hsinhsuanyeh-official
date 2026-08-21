@@ -55,7 +55,7 @@ const bubbles = [
   { id: 'comp-m1qdtqns', href: '/vr-son/', image: 'd18541_73998acfecbc43f3bf71ffe35a56feb8~mv2.jpg', alt: 'Sense Of Nowhere' },
   { id: 'comp-m1qdsezx', href: '/animation/doitagain/', image: 'd18541_96bf74b6144b40bcb0a5265b80abfc5d~mv2.jpg', alt: 'DO IT AGAIN' },
   { id: 'comp-m1qdre76', href: '/animation/ashes/', image: 'd18541_840144796ab94fa3af333100d9fb5822~mv2.jpg', alt: 'Ashes' },
-  { id: 'comp-m1qextto', static: true, image: 'd18541_96e7be12865743b3853b0abfdf81cecc~mv2.png', alt: 'Animal Spirits VR', fallback: 'capture00005.png' },
+  { id: 'comp-m1qextto', static: true, image: 'd18541_96e7be12865743b3853b0abfdf81cecc~mv2.png', alt: 'Animal Spirits VR', fallback: 'capture00005.jpg' },
   { id: 'comp-m1qfd6fc', static: true, image: 'd18541_fffbaf53c65344d087a1af48b3abe42c~mv2.jpg', alt: 'Lemon' },
 ]
 

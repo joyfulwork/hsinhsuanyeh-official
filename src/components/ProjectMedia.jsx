@@ -13,21 +13,32 @@ function WixVideo({ poster, src, title }) {
     const video = videoRef.current
     if (!video) return undefined
 
-    video.pause()
-    video.removeAttribute('src')
-    video.load()
-
-    video.src = src
-    video.muted = true
-    video.load()
-
     const play = () => {
       video.play().catch(() => {})
     }
 
-    play()
-    video.addEventListener('loadeddata', play)
+    // src is attached on approach, not on mount — autoplay would otherwise pull
+    // the whole clip (up to 5.8 MB) before it is anywhere near the viewport
+    const attach = () => {
+      if (video.getAttribute('src') === src) return
+      video.src = src
+      video.muted = true
+      video.load()
+      play()
+      video.addEventListener('loadeddata', play)
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) attach()
+        else video.pause()
+      },
+      { rootMargin: '200px 0px' },
+    )
+    observer.observe(video)
+
     return () => {
+      observer.disconnect()
       video.removeEventListener('loadeddata', play)
       video.pause()
       video.removeAttribute('src')
@@ -45,7 +56,7 @@ function WixVideo({ poster, src, title }) {
       loop
       playsInline
       controls
-      preload="auto"
+      preload="none"
       poster={projectImage(poster)}
     >
       {title}

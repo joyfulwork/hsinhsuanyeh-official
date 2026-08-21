@@ -105,7 +105,7 @@ export const WIX_HOME = {
       "static": true,
       "image": "vr-animalspirits-bubble.png",
       "alt": "Animal Spirits VR",
-      "fallback": "capture00005.png",
+      "fallback": "capture00005.jpg",
       "width": 204,
       "height": 238,
       "left": 461,

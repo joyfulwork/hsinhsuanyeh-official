@@ -150,7 +150,7 @@ export default function SenseOfNowherePage() {
             >
               <source src="/assets/videos/son-teaser.mp4" type="video/mp4" />
             </video>
-            <img src={projectImage(makingOfFigure)} alt="Making Of" />
+            <img src={projectImage(makingOfFigure)} alt="Making Of" loading="lazy" />
           </div>
         </section>
 
@@ -159,7 +159,7 @@ export default function SenseOfNowherePage() {
           <h2 className="son__h2">{copy.concept}</h2>
           <div className="son__two-col">
             {conceptArt.map((img) => (
-              <img key={img} src={projectImage(img)} alt={copy.concept} />
+              <img key={img} src={projectImage(img)} alt={copy.concept} loading="lazy" />
             ))}
           </div>
         </section>
@@ -169,7 +169,7 @@ export default function SenseOfNowherePage() {
           <h2 className="son__h2">{copy.clay}</h2>
           <div className="son__three-col">
             {claySculptures.map((img) => (
-              <img key={img} src={projectImage(img)} alt={copy.clay} />
+              <img key={img} src={projectImage(img)} alt={copy.clay} loading="lazy" />
             ))}
           </div>
         </section>

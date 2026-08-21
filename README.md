@@ -74,5 +74,10 @@ src/
 ## Notes
 
 - Fonts: Google Fonts (Jost, Syne 800, Jura) as Wix substitutes.
-- Images are original resolution (~180 MB). Compress before production deploy.
+- Images are optimized in place by `node scripts/optimize-images.mjs --apply`
+  (dry run without the flag). It caps the long edge at the size the 1280px canvas
+  can actually show, re-encodes, quantizes cut-out PNG art, and re-packs animated
+  GIFs. It is idempotent, so re-run it after dropping new assets in.
+  `node scripts/convert-png-photos.mjs --apply` handles the rarer case of a
+  photograph saved as PNG, converting it to JPEG and rewriting the references.
 - Missing Wix assets can be dropped into `public/assets/images/` using the same filenames.

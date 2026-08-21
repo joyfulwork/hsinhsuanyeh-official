@@ -51,7 +51,7 @@ export const ANIMATION_GRID = [
   },
   {
     href: '/animation/commis2-police/',
-    image: 'anim-police-hero.png',
+    image: 'anim-police-hero.jpg',
     alt: "Commissioned(3) Police's Christmas",
     title: "Commissioned(3) Police's Christmas",
   },
@@ -81,13 +81,13 @@ export const ANIMATION_GRID = [
   },
   {
     href: '/animation/comi-yanto/',
-    image: 'anim-yanto-hero.png',
+    image: 'anim-yanto-hero.jpg',
     alt: 'Commissioned(2) Yanto Gorenji',
     title: 'Commissioned(2) Yanto Gorenji',
   },
   {
     href: '/animation/commission(1)/',
-    image: 'anim-samuelsdrink-hero.png',
+    image: 'anim-samuelsdrink-hero.jpg',
     alt: "Commissioned(1) Samuel's Magical Drink",
     title: "Commissioned(1) Samuel's Magical Drink",
   },
@@ -182,7 +182,7 @@ Animation Assistants\tCheng Chen Kai, Ying-Hsuan Yeh, Hsin-Yu Liu, Shu Tzu Lin, 
   'commis2-police': {
     title: "Commissioned(3) Police's Christmas",
     metaLine: "Stopmotiom / 3' 35'' / 2022 / Solo Work",
-    hero: 'anim-police-hero.png',
+    hero: 'anim-police-hero.jpg',
     watch: 'https://www.youtube.com/watch?v=hrPWbcbMDxQ',
     desc: 'A commercial for Police Agency of Taiwan.',
     meta: {
@@ -325,9 +325,9 @@ Brat Studio Presents`,
     media: [
       mediaRow(
         mediaLocalVideo('anim-ws2-clip.mp4', 'anim-ws2-poster.jpg'),
-        mediaImage('anim-ws2-gallery-01.png'),
+        mediaImage('anim-ws2-gallery-01.jpg'),
       ),
-      mediaImage('anim-ws2-gallery-02.png'),
+      mediaImage('anim-ws2-gallery-02.jpg'),
     ],
     meta: {
       en: {
@@ -366,7 +366,7 @@ Brat Studio Presents`,
   'comi-yanto': {
     title: 'Commissioned(2) Yanto Gorenji',
     metaLine: "2D / 1' 06'' / 2022 / Solo Work",
-    hero: 'anim-yanto-hero.png',
+    hero: 'anim-yanto-hero.jpg',
     watch: 'http://www.youtube.com/watch?v=7DTjIJb1JYE',
     desc: 'A opening animation for theater projection.',
     meta: {
@@ -383,7 +383,7 @@ Brat Studio Presents`,
   'commission(1)': {
     title: "Commissioned(1) Samuel's Magical Drink",
     metaLine: "2D / 0' 20''/ 2021 / Solo Work",
-    hero: 'anim-samuelsdrink-hero.png',
+    hero: 'anim-samuelsdrink-hero.jpg',
     desc: "A Youtube Channel's Opening animation. With this project, I created some characters.",
     media: [
       mediaRow(
@@ -752,7 +752,7 @@ export const VR_SON = {
   },
   conceptImages: [
     'vr-son-concept-pig.png',
-    'vr-son-scene-01.png',
+    'vr-son-scene-01.jpg',
     'vr-son-scene-02.jpg',
     'vr-son-scene-03.jpg',
   ],
