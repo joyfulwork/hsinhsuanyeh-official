@@ -8,7 +8,7 @@ import SenseOfNowherePage from './pages/SenseOfNowherePage.jsx'
 import IllustrationListPage from './pages/IllustrationListPage.jsx'
 import IllustrationProjectPage from './pages/IllustrationProjectPage.jsx'
 import ComicsListPage from './pages/ComicsListPage.jsx'
-import ComeoutPage from './pages/ComeoutPage.jsx'
+import ComicsProjectPage from './pages/ComicsProjectPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 
 function TrailingSlashRedirect() {
@@ -44,8 +44,8 @@ function AppRoutes() {
 
         <Route path="/comics/" element={<ComicsListPage />} />
         <Route path="/zh/comics/" element={<ComicsListPage />} />
-        <Route path="/comics/comeout/" element={<ComeoutPage />} />
-        <Route path="/zh/comics/comeout/" element={<ComeoutPage />} />
+        <Route path="/comics/:slug/" element={<ComicsProjectPage />} />
+        <Route path="/zh/comics/:slug/" element={<ComicsProjectPage />} />
 
         <Route path="/about-contact/" element={<AboutPage />} />
         <Route path="/zh/about-contact/" element={<AboutPage />} />

@@ -118,6 +118,11 @@ const mediaWixVideo = (poster) => ({
   poster,
   src: `https://video.wixstatic.com/video/${poster.replace(/\.(jpg|jpeg|png)$/i, '')}/480p/mp4/file.mp4`,
 })
+const mediaLocalVideo = (file, poster) => ({
+  type: 'video',
+  poster,
+  src: `/assets/videos/${file}`,
+})
 
 export const ANIMATION_DETAILS = {
   ashes: {
@@ -208,7 +213,7 @@ Animation Assistants\tCheng Chen Kai, Ying-Hsuan Yeh, Hsin-Yu Liu, Shu Tzu Lin, 
         mediaImage('anim-doitagain-gallery-04.jpg'),
         mediaImage('anim-doitagain-gallery-05.jpg'),
       ),
-      mediaWixVideo('anim-doitagain-poster.jpg'),
+      mediaLocalVideo('anim-doitagain-clip.mp4', 'anim-doitagain-poster.jpg'),
       mediaImage('anim-doitagain-gallery-06.jpg'),
       mediaRow(
         mediaImage('anim-doitagain-gallery-07.jpg'),
@@ -319,7 +324,7 @@ Brat Studio Presents`,
     desc: 'Workshop in Vilar, Portugal. Learning incredibly beautiful techniques with Regina Pessoa.\nSuch a wonderful trip :)',
     media: [
       mediaRow(
-        mediaWixVideo('anim-ws2-poster.jpg'),
+        mediaLocalVideo('anim-ws2-clip.mp4', 'anim-ws2-poster.jpg'),
         mediaImage('anim-ws2-gallery-01.png'),
       ),
       mediaImage('anim-ws2-gallery-02.png'),
@@ -342,7 +347,7 @@ Brat Studio Presents`,
     desc: 'A week of workshop in Montemor-o-Novo, Portugal. Have some fun in this cozy little town and great experience',
     media: [
       mediaRow(
-        mediaWixVideo('anim-ws1-poster.jpg'),
+        mediaLocalVideo('anim-ws1-clip.mp4', 'anim-ws1-poster.jpg'),
         mediaImage('anim-ws1-gallery-01.jpg'),
       ),
       mediaImage('anim-ws1-gallery-02.jpg'),
@@ -382,7 +387,7 @@ Brat Studio Presents`,
     desc: "A Youtube Channel's Opening animation. With this project, I created some characters.",
     media: [
       mediaRow(
-        mediaWixVideo('anim-samuelsdrink-poster.jpg'),
+        mediaLocalVideo('anim-samuelsdrink-clip.mp4', 'anim-samuelsdrink-poster.jpg'),
         mediaImage('anim-samuelsdrink-gallery-01.jpg'),
       ),
     ],
@@ -438,11 +443,61 @@ TNUA Sophomore year I Production`,
   },
 }
 
+export const COMICS_ORDER = ['comeout', 'mole', 'eu1']
+
 export const COMICS_GRID = [
-  { href: '/comics/comeout/', image: 'comics-comeout-hero.gif', alt: "Why don't you come out" },
-  { image: 'illus-mole.jpg', alt: 'mole' },
-  { image: 'comics-eutrip-series.jpg', alt: 'no title, EU trip comic series' },
+  { href: '/comics/comeout/', image: 'comics-comeout-hero.jpg', alt: "Why don't you come out" },
+  { href: '/comics/mole/', image: 'comics-mole-hero.jpg', alt: 'mole' },
+  { href: '/comics/eu1/', image: 'comics-eutrip-series.jpg', alt: 'no title, EU trip comic series' },
 ]
+
+export const COMICS_DETAILS = {
+  comeout: {
+    title: "Why don't you come out?",
+    year: '2021',
+    meta: 'WebComic / Animated / 8P',
+    desc: 'During the pandemic, freedom of going anywhere as a human was limited. While the animals came back to streets or national parks, they enjoyed the freedom once again.',
+    hero: 'comics-comeout-hero.jpg',
+    pages: [
+      'comics-comeout-page-01.gif',
+      'comics-comeout-page-02.gif',
+      'comics-comeout-page-03.gif',
+      'comics-comeout-page-04.gif',
+      'comics-comeout-page-05.gif',
+      'comics-comeout-page-06.gif',
+      'comics-comeout-page-07.gif',
+      'comics-comeout-page-08.gif',
+    ],
+  },
+  mole: {
+    title: 'mole',
+    year: '2021',
+    meta: 'WebComic / B&W / 12P',
+    desc: 'A tiny comic',
+    hero: 'comics-mole-hero.jpg',
+    pages: [
+      'comics-mole-page-01.jpg',
+      'comics-mole-page-02.jpg',
+      'comics-mole-page-03.jpg',
+      'comics-mole-page-04.jpg',
+      'comics-mole-page-05.jpg',
+      'comics-mole-page-06.jpg',
+      'comics-mole-page-07.jpg',
+      'comics-mole-page-08.jpg',
+      'comics-mole-page-09.jpg',
+      'comics-mole-page-10.jpg',
+      'comics-mole-page-11.jpg',
+    ],
+  },
+  eu1: {
+    title: 'no title, EU trip comic series',
+    year: '2019',
+    meta: 'Zine / RISO-Printed / 30P',
+    desc: 'A6 / 30p / RISO print\nPrinted in Netherlands',
+    hero: 'comics-eutrip-hero.jpg',
+    pages: Array.from({ length: 31 }, (_, i) => `comics-eutrip-page-${String(i + 1).padStart(2, '0')}.jpg`),
+  },
+}
 
 export const ILLUSTRATION_GRID = [
   {
@@ -664,16 +719,7 @@ Music\tTt`,
 2018 Panama Animation Fest / Panama / selected`,
 }
 
-export const COMEOUT = {
-  title: "Why don't you come out?",
-  hero: 'comics-comeout-hero.gif',
-  meta: '2021 · WebComic / Animated / 8P',
-  desc: 'During the pandemic, freedom of going anywhere as a human was limited. While the animals came back to streets or national parks, they enjoyed the freedom once again.',
-  pages: [
-    'comics-comeout-page-01.gif',
-    'comics-comeout-page-02.gif',
-  ],
-}
+export const COMEOUT = COMICS_DETAILS.comeout
 
 export const SUMMER_SECRETS = ILLUSTRATION_DETAILS['summer-secrets']
 

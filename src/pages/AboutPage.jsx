@@ -41,15 +41,21 @@ export default function AboutPage() {
               values="0.6196078431372549 0 0 0 0.37254901960784315 0.807843137254902 0 0 0 0 0.07843137254901955 0 0 0 0.6784313725490196 0 0 0 1 0"
             />
           </filter>
+          <filter id="about-blur" colorInterpolationFilters="sRGB">
+            <feGaussianBlur stdDeviation="2" />
+          </filter>
         </svg>
         <div className="photo-purple">
           <img src={projectImage('about-photo-purple.jpg')} alt="" />
         </div>
         <div className="photo-main">
-          <img
-            src={projectImage('about-photo-main.jpg')}
-            alt={lang === 'zh' ? '葉信萱' : 'Hsin-Hsuan Yeh'}
-          />
+          <img src={projectImage('about-photo-main.jpg')} alt="" />
+          <div className="photo-accent">
+            <img
+              src={projectImage('about-photo-main.jpg')}
+              alt={lang === 'zh' ? '葉信萱' : 'Hsin-Hsuan Yeh'}
+            />
+          </div>
         </div>
         <div className="bio">
           <h1>

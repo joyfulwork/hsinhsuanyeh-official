@@ -61,7 +61,7 @@ export default function AnimationProjectPage() {
             </p>
           ) : null}
 
-          <ProjectMedia media={project.media} title={project.title} />
+          <ProjectMedia key={slug} media={project.media} title={project.title} />
 
           {project.credits ? (
             <>

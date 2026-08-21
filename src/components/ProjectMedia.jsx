@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { projectImage } from '../data/projects.js'
 
 function vimeoId(url) {
@@ -6,17 +7,47 @@ function vimeoId(url) {
 }
 
 function WixVideo({ poster, src, title }) {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return undefined
+
+    video.pause()
+    video.removeAttribute('src')
+    video.load()
+
+    video.src = src
+    video.muted = true
+    video.load()
+
+    const play = () => {
+      video.play().catch(() => {})
+    }
+
+    play()
+    video.addEventListener('loadeddata', play)
+    return () => {
+      video.removeEventListener('loadeddata', play)
+      video.pause()
+      video.removeAttribute('src')
+      video.load()
+    }
+  }, [src])
+
   return (
     <video
+      key={src}
+      ref={videoRef}
       className="masonry-video"
-      controls
+      autoPlay
+      muted
+      loop
       playsInline
-      preload="metadata"
+      controls
+      preload="auto"
       poster={projectImage(poster)}
-      crossOrigin="anonymous"
-      referrerPolicy="origin"
     >
-      <source src={src} type="video/mp4" />
       {title}
     </video>
   )
@@ -80,9 +111,17 @@ export function ProjectMedia({ media, title }) {
 
   return (
     <div className="project-masonry">
-      {items.map((item, index) => (
-        <MasonryItem key={index} item={item} title={title} />
-      ))}
+      {items.map((item, index) => {
+        const key =
+          item.type === 'video'
+            ? `video-${item.src}`
+            : item.type === 'image'
+              ? `image-${item.file}`
+              : item.type === 'vimeo'
+                ? `vimeo-${item.url}`
+                : `item-${index}`
+        return <MasonryItem key={key} item={item} title={title} />
+      })}
     </div>
   )
 }

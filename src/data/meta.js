@@ -117,12 +117,36 @@ export const PAGE_META = {
     en: {
       title: "Why don't you come out? | Hsin Hsuan Yeh",
       description: "Why don't you come out? — animated webcomic by Hsin-Hsuan Yeh (2021).",
-      ogImage: 'comics-comeout-hero.gif',
+      ogImage: 'comics-comeout-hero.jpg',
     },
     zh: {
       title: "Why don't you come out? | Hsin Hsuan Yeh",
       description: "Why don't you come out? — 葉信萱 2021 年動畫網路漫畫。",
-      ogImage: 'comics-comeout-hero.gif',
+      ogImage: 'comics-comeout-hero.jpg',
+    },
+  },
+  mole: {
+    en: {
+      title: 'mole | Hsin Hsuan Yeh',
+      description: 'mole — tiny B&W webcomic by Hsin-Hsuan Yeh (2021).',
+      ogImage: 'comics-mole-hero.jpg',
+    },
+    zh: {
+      title: 'mole | Hsin Hsuan Yeh',
+      description: 'mole — 葉信萱 2021 年黑白短篇漫畫。',
+      ogImage: 'comics-mole-hero.jpg',
+    },
+  },
+  eu1: {
+    en: {
+      title: 'no title, EU trip comic series | Hsin Hsuan Yeh',
+      description: 'no title, EU trip comic series — RISO-printed zine by Hsin-Hsuan Yeh (2019).',
+      ogImage: 'comics-eutrip-hero.jpg',
+    },
+    zh: {
+      title: 'no title, EU trip comic series | Hsin Hsuan Yeh',
+      description: 'no title, EU trip comic series — 葉信萱 2019 年 RISO 印刷 zine。',
+      ogImage: 'comics-eutrip-hero.jpg',
     },
   },
 }

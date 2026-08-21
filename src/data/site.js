@@ -68,6 +68,8 @@ export const ROUTES = [
   { path: '/illustration/policeseries/', en: '/illustration/policeseries/', zh: '/zh/illustration/policeseries/' },
   { path: '/comics/', en: '/comics/', zh: '/zh/comics/' },
   { path: '/comics/comeout/', en: '/comics/comeout/', zh: '/zh/comics/comeout/' },
+  { path: '/comics/mole/', en: '/comics/mole/', zh: '/zh/comics/mole/' },
+  { path: '/comics/eu1/', en: '/comics/eu1/', zh: '/zh/comics/eu1/' },
   { path: '/about-contact/', en: '/about-contact/', zh: '/zh/about-contact/' },
 ]
 

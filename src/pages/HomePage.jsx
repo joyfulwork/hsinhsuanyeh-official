@@ -119,8 +119,6 @@ export default function HomePage() {
               '--bubble-mask': maskUrl(LEMON.maskImage),
               left: '71.4%',
               top: '70.3%',
-              width: '15.2%',
-              aspectRatio: '1',
             }}
           >
             <img src={projectImage('lemon-home.jpg')} alt="Hsin-Hsuan Yeh" loading="lazy" />

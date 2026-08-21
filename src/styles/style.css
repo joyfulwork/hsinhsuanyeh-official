@@ -15,8 +15,15 @@
   padding: 0;
 }
 
-html, body {
+html {
   overflow-x: hidden;
+}
+
+body {
+  overflow-x: clip;
+}
+
+html, body {
   background: var(--bg);
   color: var(--ink);
   font-weight: 300;
@@ -524,6 +531,11 @@ body.home .page, body.full-bleed .page {
   object-fit: cover;
 }
 
+.goose-sec .lemon {
+  width: 195px;
+  height: 195px;
+}
+
 .goose-sec .lemon img {
   display: block;
   width: 100%;
@@ -838,9 +850,15 @@ body.home .page, body.full-bleed .page {
 .about .onion {
   position: absolute;
   top: 0;
-  left: 26%;
-  width: 40%;
+  left: 0;
+  width: 100%;
   opacity: 0.9;
+
+/* section is 1265x737 on the original canvas */
+
+  aspect-ratio: 1265 / 737;
+  object-fit: cover;
+  object-position: 100% 100%;
 }
 
 .about .about-filters {
@@ -864,7 +882,7 @@ body.home .page, body.full-bleed .page {
 .about .photo-purple {
   position: absolute;
   top: 26%;
-  left: 8%;
+  left: 25%;
   width: min(394px, 36%);
   filter: url(#about-purple);
 
@@ -874,20 +892,34 @@ body.home .page, body.full-bleed .page {
 .about .photo-main {
   position: absolute;
   top: 36%;
-  left: 3%;
+  left: 20%;
   width: min(403px, 37%);
 
   aspect-ratio: 403 / 382;
 }
 
+.about .photo-main > img {
+  filter: url(#about-blur);
+}
+
 .about .photo-main .photo-accent {
   position: absolute;
-  top: 32.5%;
+  top: 11.8%;
   left: 39.9%;
   width: 20.1%;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 
   aspect-ratio: 81 / 112;
+}
+
+/* 100/20.1 and 100/29.32 — the oval is 20.1% x 29.32% of .photo-main, so the
+   image is scaled back up to .photo-main's box and offset by the oval's origin */
+.about .photo-accent img {
+  position: absolute;
+  top: -40.25%;
+  left: -198.51%;
+  width: 497.51%;
+  height: 341.08%;
 }
 
 .about .bio {
@@ -978,11 +1010,6 @@ body.home .page, body.full-bleed .page {
 .project__hero--illustration img {
   object-fit: cover;
   object-position: center center;
-}
-
-.project__hero--comics img {
-  object-fit: none;
-  object-position: center 38%;
 }
 
 .project__title {
@@ -1132,9 +1159,34 @@ body.home .page, body.full-bleed .page {
   height: auto;
 }
 
+/* ---------- comics detail (comeout / mole / eu1) ---------- */
+.comic-project {
+  padding: 54px 0 72px;
+}
+
+.comic-project__inner {
+  margin: 0 auto;
+  width: min(980px, calc(100% - 64px));
+}
+
+.comic-project__hero {
+  overflow: hidden;
+  width: 100%;
+  height: 579px;
+  background: #efe6de;
+}
+
+.comic-project__hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
 .comic-detail {
-  margin: 0 auto 24px;
-  max-width: 980px;
+  margin: 28px 0 0;
 }
 
 .comic-detail__heading {
@@ -1146,81 +1198,112 @@ body.home .page, body.full-bleed .page {
 }
 
 .comic-detail__title {
-  margin: 0 0 4px;
-  color: #1dd36f;
+  margin: 0;
+  color: var(--green);
   font-weight: 400;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 1.05;
 }
 
 .comic-detail__year {
+  padding-bottom: 6px;
   color: var(--orange);
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1;
 }
 
 .comic-detail__meta {
-  margin: 0 0 8px;
-  color: #8c776b;
-  font-size: 12px;
+  margin: 14px 0 10px;
+  color: #777;
+  font-size: 13px;
 }
 
 .comic-detail__desc {
   margin: 0;
-  max-width: 640px;
-  color: #6c574b;
-  font-size: 12px;
-  line-height: 1.5;
+  max-width: 753px;
+  color: var(--ink);
+  white-space: pre-line;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .comic-reader {
-  margin: 0 auto;
-  max-width: 980px;
+  margin-top: 28px;
 }
 
 .comic-reader__marquee {
-  margin: 18px 0 24px;
+  margin: 0 0 28px;
   color: var(--orange);
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+
+  --marquee-gap: 14px;
+}
+
+.comic-reader__marquee .word {
+  color: var(--orange);
+}
+
+.comic-reader__marquee .star {
+  width: 18px;
+  height: 18px;
+}
+
+.comic-reader__marquee .star svg {
+  width: 18px;
+  height: 18px;
 }
 
 .comic-reader__main {
   position: relative;
   display: flex;
   justify-content: center;
+  min-height: 420px;
   background: transparent;
 }
 
 .comic-reader__main img {
   display: block;
-  max-width: 100%;
+  max-height: 936px;
+  width: min(749px, 100%);
   height: auto;
+
+  object-fit: contain;
 }
 
 .comic-reader__arrow {
   position: absolute;
   top: 50%;
   z-index: 2;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border: none;
   background: transparent;
   color: #d5c7bc;
-  font-size: 28px;
+  font-size: 34px;
   line-height: 1;
   cursor: pointer;
   transform: translateY(-50%);
 }
 
 .comic-reader__arrow--prev {
-  left: 12px;
+  left: 0;
 }
 
 .comic-reader__arrow--next {
-  right: 12px;
+  right: 0;
 }
 
-.comic-reader__arrow:hover {
-  color: #9f8c80;
+@media (hover: hover) and (pointer: fine) {
+  .comic-reader__arrow:hover {
+    color: #9f8c80;
+  }
+}
+
+.comic-project .pnav {
+  margin-top: 40px;
 }
 
 .project h2 {
@@ -1556,93 +1639,6 @@ body.home .page, body.full-bleed .page {
   margin-left: 92px;
 }
 
-@media (max-width: 1279px) {
-  /* the 148px Wix canvas offset no longer fits — reclaim it */
-  .son {
-    margin-left: 24px;
-    padding-right: 24px;
-  }
-
-  .son__making-of {
-    flex-wrap: wrap;
-
-    gap: 16px;
-  }
-
-  .son__video {
-    flex: 1 1 460px;
-    width: auto;
-    height: auto;
-
-    aspect-ratio: 16 / 9;
-  }
-
-  .son__making-of > img {
-    flex: 0 1 280px;
-    width: auto;
-    height: auto;
-  }
-
-  .son__two-col img {
-    height: auto;
-    max-height: 475px;
-    min-width: 0;
-  }
-
-  .son__three-col img {
-    height: auto;
-    max-height: 525px;
-  }
-
-  .son__hero {
-    min-height: 610px;
-
-    gap: 34px;
-  }
-
-  .son__hero-left {
-    flex-basis: 470px;
-  }
-
-  .son__hero-bg {
-    width: 470px;
-    height: 376px;
-  }
-
-  .son__hero-text {
-    top: 58px;
-    left: 65px;
-    width: 340px;
-  }
-
-  .son__hero-text h1 {
-    font-size: 44px;
-  }
-
-  .son__hero-footer {
-    top: 360px;
-    left: 318px;
-    width: max-content;
-  }
-
-  .son__hero-right {
-    flex-basis: 260px;
-  }
-
-  .son__hero-right img {
-    width: 260px;
-    height: 146px;
-  }
-
-  .son__hero-right img:nth-child(2) {
-    margin-left: 24px;
-  }
-
-  .son__hero-right img:nth-child(3) {
-    margin-left: 56px;
-  }
-}
-
 /* Sections */
 .son__section {
   margin-bottom: 60px;
@@ -1812,6 +1808,100 @@ body.home .page, body.full-bleed .page {
   font-size: 14px;
   line-height: 1.7;
   opacity: 0.7;
+}
+
+/* The binding element is .son__hero-right img:nth-child(3): its right edge sits
+   at 148+50+552+72+92+325 = 1239px, so the canvas layout stops fitting below
+   ~1254px of viewport (1239 + a 15px scrollbar). */
+@media (max-width: 1253px) {
+  /* the 148px Wix canvas offset no longer fits — reclaim it */
+  .son {
+    margin-left: 24px;
+    padding-right: 24px;
+  }
+
+  .son__making-of {
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+
+  /* min-width:auto is min-content on a flex item — for the video that is its
+     intrinsic 1920px, which blows the row apart */
+  .son__video {
+    flex: 1 1 460px;
+    min-width: 0;
+    width: auto;
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+  }
+
+  .son__making-of > img {
+    flex: 0 1 280px;
+    min-width: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .son__two-col img {
+    min-width: 0;
+    max-height: 475px;
+    height: auto;
+  }
+
+  .son__three-col img {
+    max-height: 525px;
+    height: auto;
+  }
+
+  .son__hero {
+    min-height: 610px;
+
+    gap: 34px;
+  }
+
+  .son__hero-left {
+    flex-basis: 470px;
+  }
+
+  .son__hero-bg {
+    width: 470px;
+    height: 376px;
+  }
+
+  .son__hero-text {
+    top: 58px;
+    left: 65px;
+    width: 340px;
+  }
+
+  .son__hero-text h1 {
+    font-size: 44px;
+  }
+
+  .son__hero-footer {
+    top: 360px;
+    left: 318px;
+    width: max-content;
+  }
+
+  .son__hero-right {
+    flex-basis: 260px;
+  }
+
+  .son__hero-right img {
+    width: 260px;
+    height: 146px;
+  }
+
+  .son__hero-right img:nth-child(2) {
+    margin-left: 24px;
+  }
+
+  .son__hero-right img:nth-child(3) {
+    margin-left: 56px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2046,8 +2136,9 @@ body.home .page, body.full-bleed .page {
     padding: 12px 16px;
     border-bottom: 1px solid rgba(29, 14, 3, 0.08);
     background: rgba(255, 246, 239, 0.92);
-    backdrop-filter: blur(10px);
+    pointer-events: auto;
 
+    backdrop-filter: blur(10px);
     gap: 10px 18px;
   }
 
@@ -2110,8 +2201,16 @@ body.home .page, body.full-bleed .page {
   }
 
   .goose-sec .tbc {
-    font-size: clamp(12px, 2.6vw, 26px);
     letter-spacing: 0.3em;
+    font-size: clamp(12px, 2.6vw, 26px);
+  }
+
+  /* 195px is over half a phone screen and runs off the right edge */
+  .goose-sec .lemon {
+    width: 15.2%;
+    height: auto;
+
+    aspect-ratio: 1;
   }
 
   /* galleries: symmetric padding instead of the Wix right-margin */
@@ -2126,7 +2225,6 @@ body.home .page, body.full-bleed .page {
 
   .grid.cols-3.comics-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     gap: 20px 16px;
   }
 
@@ -2161,11 +2259,12 @@ body.home .page, body.full-bleed .page {
 
   .vr-stage .badge {
     position: relative;
-    --bounce: 10px;
     top: auto;
     left: auto;
     width: min(320px, 82%);
     height: auto;
+
+    --bounce: 10px;
   }
 
   .vr-stage .flower .tbc {
@@ -2178,10 +2277,14 @@ body.home .page, body.full-bleed .page {
     min-height: 0;
   }
 
+  /* stacked layout has nothing to sit behind, so drop the section crop */
   .about .onion {
     position: static;
     margin: 0 auto 8px;
     width: 58%;
+
+    aspect-ratio: auto;
+    object-fit: contain;
   }
 
   .about .photo-purple, .about .photo-main {
@@ -2217,20 +2320,34 @@ body.home .page, body.full-bleed .page {
     font-size: clamp(34px, 11vw, 95px);
   }
 
-  .project__hero--comics img {
-    object-fit: cover;
-  }
-
   .project__title, .project > h1 {
     font-size: clamp(28px, 8vw, 42px);
   }
 
-  .comic-detail__title {
-    font-size: clamp(30px, 9vw, 48px);
+  .comic-project {
+    padding: 24px 0 48px;
   }
 
-  .comic-detail, .comic-reader {
-    padding: 0 20px;
+  .comic-project__inner {
+    margin: 0 auto;
+    width: min(980px, calc(100% - 32px));
+  }
+
+  .comic-project__hero {
+    height: clamp(220px, 52vw, 579px);
+  }
+
+  .comic-detail__title {
+    font-size: clamp(28px, 8vw, 46px);
+  }
+
+  .comic-detail__year {
+    font-size: 16px;
+  }
+
+  .comic-reader__main img {
+    max-height: none;
+    width: min(749px, 100%);
   }
 
   .project-masonry {
@@ -2287,11 +2404,11 @@ body.home .page, body.full-bleed .page {
     overflow-x: auto;
     overflow-y: hidden;
     max-height: none;
+    column-gap: 8px;
 
     grid-auto-flow: column;
     grid-auto-columns: 88px;
     grid-template-columns: none;
-    column-gap: 8px;
   }
 }
 
